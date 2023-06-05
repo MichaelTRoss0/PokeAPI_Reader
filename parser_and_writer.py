@@ -73,6 +73,8 @@ def parse_name(raw_name, all_forms):
             name = "Keldeo"
         case "Meloetta Aria":
             name = "Meloetta"
+        case "Flabebe":
+            name = "Flabébé"
         case "Meowstic Male":
             name = "Meowstic"
         case "Aegislash Shield":
