@@ -412,6 +412,15 @@ def create_request(i, forms, dex):
         case "428":
             if mega:
                 dex = get_response(i, "lopunny-mega", dex)
+        case "445":
+            if mega:
+                dex = get_response(i, "garchomp-mega", dex)
+        case "448":
+            if mega:
+                dex = get_response(i, "lucario-mega", dex)
+        case "460":
+            if mega:
+                dex = get_response(i, "abomasnow-mega", dex)
         case "475":
             if mega:
                 dex = get_response(i, "gallade-mega", dex)
@@ -454,13 +463,189 @@ def create_request(i, forms, dex):
                 dex = get_response(i, "arceus-water", dex)
                 dex = get_response(i, "arceus-fairy", dex)
 
+        case "502":
+            if regional:
+                dex = get_response(i, "samurott-hisui", dex)
         case "531":
             if mega:
                 dex = get_response(i, "audino-mega", dex)
+        case "549":
+            if regional:
+                dex = get_response(i, "lilligant-hisui", dex)
         case "550":
             if aesthetic:
                 dex = get_response(i, "basculin-blue-striped", dex)
                 dex = get_response(i, "basulin-white-striped", dex)
+        case "554":
+            if regional:
+                dex = get_response(i, "darumaka-galar", dex)
+        case "555":
+            if alt:
+                dex = get_response(i, "darmanitan-zen", dex)
+            if regional:
+                dex = get_response(i, "darmanitan-galar", dex)
+            if alt and regional:
+                dex = get_response(i, "darmanitan-garar-zen", dex)
+        case "561":
+            if regional:
+                dex = get_response(i, "yamask-galar", dex)
+        case "569":
+            if gmax:
+                dex = get_response(i, "garbodor-gmax", dex)
+        case "570":
+            if regional:
+                dex = get_response(i, "zorua-hisui", dex)
+        case "571":
+            if regional:
+                dex = get_response(i, "zoroark-hisui", dex)
+        case "585":
+            if aesthetic:
+                dex = get_response(i, "deerling-summer", dex)
+                dex = get_response(i, "deerling-autumn", dex)
+                dex = get_response(i, "deerling-winter", dex)
+        case "586":
+            if aesthetic:
+                dex = get_response(i, "sawsbuck-summer", dex)
+                dex = get_response(i, "sawsbuck-autumn", dex)
+                dex = get_response(i, "sawsbuck-winter", dex)
+        case "618":
+            if regional:
+                dex = get_response(i, "stunfisk-galarian", dex)
+        case "628":
+            if regional:
+                dex = get_response(i, "braviary-hisui", dex)
+        case "641":
+            if alt:
+                dex = get_response(i, "tornadus-therian", dex)
+        case "642":
+            if alt:
+                dex = get_response(i, "thundurus-therian", dex)
+        case "645":
+            if alt:
+                dex = get_response(i, "landorus-therian", dex)
+        case "646":
+            if alt:
+                dex = get_response(i, "kyurem-black", dex)
+                dex = get_response(i, "kyurem-white", dex)
+        case "647":
+            if aesthetic:
+                dex = get_response(i, "keldeo-resolute", dex)
+        case "648":
+            if alt:
+                dex = get_response(i, "meloetta-pirouette", dex)
+        case "649":
+            if aesthetic:
+                dex = get_response(i, "genesect-douse", dex)
+                dex = get_response(i, "genesect-shock", dex)
+                dex = get_response(i, "genesect-burn", dex)
+                dex = get_response(i, "genesect-chill", dex)
+
+        case "658":
+            if unique:
+                dex = get_response(i, "greninja-battle-bond", dex)
+            if ash:
+                dex = get_response(i, "greninja-ash", dex)
+        case "666":
+            if aesthetic:
+                dex = get_response(i, "vivillon-icy-snow", dex)
+                dex = get_response(i, "vivillon-polar", dex)
+                dex = get_response(i, "vivillon-tundra", dex)
+                dex = get_response(i, "vivillon-continental", dex)
+                dex = get_response(i, "vivillon-garden", dex)
+                dex = get_response(i, "vivillon-elegant", dex)
+                dex = get_response(i, "vivillon-modern", dex)
+                dex = get_response(i, "vivillon-marine", dex)
+                dex = get_response(i, "vivillon-archipelago", dex)
+                dex = get_response(i, "vivillon-high-plains", dex)
+                dex = get_response(i, "vivillon-sandstorm", dex)
+                dex = get_response(i, "vivillon-river", dex)
+                dex = get_response(i, "vivillon-monsoon", dex)
+                dex = get_response(i, "vivillon-savanna", dex)
+                dex = get_response(i, "vivillon-sun", dex)
+                dex = get_response(i, "vivillon-ocean", dex)
+                dex = get_response(i, "vivillon-jungle", dex)
+                dex = get_response(i, "vivillon-fancy", dex)
+                dex = get_response(i, "vivillon-poke-ball", dex)
+        case "669":
+            if aesthetic:
+                dex = get_response(i, "flabebe-yellow", dex)
+                dex = get_response(i, "flabebe-orange", dex)
+                dex = get_response(i, "flabebe-blue", dex)
+                dex = get_response(i, "flabebe-white", dex)
+        case "670":
+            if aesthetic:
+                dex = get_response(i, "floette-yellow", dex)
+                dex = get_response(i, "floette-orange", dex)
+                dex = get_response(i, "floette-blue", dex)
+                dex = get_response(i, "floette-white", dex)
+            if unique:
+                dex = get_response(i, "floette-eternal")
+        case "671":
+            if aesthetic:
+                dex = get_response(i, "florges-yellow", dex)
+                dex = get_response(i, "florges-orange", dex)
+                dex = get_response(i, "florges-blue", dex)
+                dex = get_response(i, "florges-white", dex)
+        case "676":
+            if aesthetic:
+                dex = get_response(i, "furfrou-heart", dex)
+                dex = get_response(i, "furfrou-star", dex)
+                dex = get_response(i, "furfrou-diamond", dex)
+                dex = get_response(i, "furfrou-matron", dex)
+                dex = get_response(i, "furfrou-dandy", dex)
+                dex = get_response(i, "furfrou-la-reine", dex)
+                dex = get_response(i, "furfrou-pharaoh", dex)
+        case "678":
+            if gender:
+                dex = get_response(i, "meowstic-female", dex)
+        case "681":
+            if alt:
+                dex = get_response(i, "aegislash-blade", dex)
+        case "705":
+            if regional:
+                dex = get_response(i, "sliggoo-hisui", dex)
+        case "706":
+            if regional:
+                dex = get_response(i, "goodra-hisui", dex)
+        case "710":
+            if alt:
+                dex = get_response(i, "pumpkaboo-small", dex)
+                dex = get_response(i, "pumpkaboo-large", dex)
+                dex = get_response(i, "pumpkaboo-super", dex)
+        case "711":
+            if alt:
+                dex = get_response(i, "gourgeist-small", dex)
+                dex = get_response(i, "gourgeist-large", dex)
+                dex = get_response(i, "gourgeist-super", dex)
+        case "713":
+            if regional:
+                dex = get_response(i, "avalugg-hisui", dex)
+        case "716":
+            if aesthetic:
+                dex = get_response(i, "xerneas-neutral", dex)
+        case "718":
+            if alt:
+                dex = get_response(i, "zygarde-10-power-construct", dex)
+                dex = get_response(i, "zygarde-50-power-construct", dex)
+                dex = get_response(i, "zygarde-complete", dex)
+                dex = get_response(i, "zygarde-10", dex)
+        case "719":
+            if mega:
+                dex = get_response(i, "diancie-mega", dex)
+        case "720":
+            if alt:
+                dex = get_response(i, "hoopa-unbound", dex)
+
+        case "???":
+            if gender:
+                dex = get_response(i, "indeedee-female", dex)
+        case "???":
+            if gender:
+                dex = get_response(i, "basculegion-female", dex)
+
+        case "???":
+            if gender:
+                dex = get_response(i, "oinkologne-female", dex)
 
     return dex
 
