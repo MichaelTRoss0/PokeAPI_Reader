@@ -672,6 +672,40 @@ def create_request(i, forms, dex):
         case "758":
             if totem:
                 dex.append(get_response(i, "salazzle-totem"))
+        case "773":
+            if alt:
+                dex.append(get_response(i, "silvally-fighting"))
+                dex.append(get_response(i, "silvally-flying"))
+                dex.append(get_response(i, "silvally-poison"))
+                dex.append(get_response(i, "silvally-ground"))
+                dex.append(get_response(i, "silvally-rock"))
+                dex.append(get_response(i, "silvally-bug"))
+                dex.append(get_response(i, "silvally-ghost"))
+                dex.append(get_response(i, "silvally-steel"))
+                dex.append(get_response(i, "silvally-fire"))
+                dex.append(get_response(i, "silvally-water"))
+                dex.append(get_response(i, "silvally-grass"))
+                dex.append(get_response(i, "silvally-electric"))
+                dex.append(get_response(i, "silvally-psychic"))
+                dex.append(get_response(i, "silvally-ice"))
+                dex.append(get_response(i, "silvally-dragon"))
+                dex.append(get_response(i, "silvally-dark"))
+                dex.append(get_response(i, "silvally-fairy"))
+        case "774":
+            if alt:
+                dex.append(get_response(i, "minior-orange-meteor"))
+                dex.append(get_response(i, "minior-yellow-meteor"))
+                dex.append(get_response(i, "minior-green-meteor"))
+                dex.append(get_response(i, "minior-blue-meteor"))
+                dex.append(get_response(i, "minior-indigo-meteor"))
+                dex.append(get_response(i, "minior-violet-meteor"))
+                dex.append(get_response(i, "minior-red"))
+                dex.append(get_response(i, "minior-orange"))
+                dex.append(get_response(i, "minior-yellow"))
+                dex.append(get_response(i, "minior-green"))
+                dex.append(get_response(i, "minior-blue"))
+                dex.append(get_response(i, "minior-indigo"))
+                dex.append(get_response(i, "minior-violet"))
         case "777":
             if totem:
                 dex.append(get_response(i, "togedemaru-totem"))
@@ -690,6 +724,12 @@ def create_request(i, forms, dex):
                 dex.append(get_response(i, "necrozma-dusk"))
                 dex.append(get_response(i, "necrozma-dawn"))
                 dex.append(get_response(i, "necrozma-ultra"))
+        case "801":
+            if aesthetic:
+                dex.append(get_response(i, "magearna-original"))
+        case "809":
+            if gmax:
+                dex.append(get_response(i, "melmetal-gmax"))
 
         case "???":
             if gender:
