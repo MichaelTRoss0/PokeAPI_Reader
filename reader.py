@@ -201,6 +201,7 @@ def create_request(i, forms, dex):
         case "128":
             if regional:
                 dex.append(get_response(i, "tauros-paldea-combat-breed"))
+            if regional and alt:
                 dex.append(get_response(i, "tauros-paldea-blaze-breed"))
                 dex.append(get_response(i, "tauros-paldea-aqua-breed"))
         case "130":
@@ -731,12 +732,120 @@ def create_request(i, forms, dex):
             if gmax:
                 dex.append(get_response(i, "melmetal-gmax"))
 
-        case "???":
+        case "812":
+            if gmax:
+                dex.append(get_response(i, "rillaboom-gmax"))
+        case "815":
+            if gmax:
+                dex.append(get_response(i, "cinderace-gmax"))
+        case "818":
+            if gmax:
+                dex.append(get_response(i, "inteleon-gmax"))
+        case "823":
+            if gmax:
+                dex.append(get_response(i, "corviknight-gmax"))
+        case "826":
+            if gmax:
+                dex.append(get_response(i, "orbeetle-gmax"))
+        case "834":
+            if gmax:
+                dex.append(get_response(i, "drednaw-gmax"))
+        case "839":
+            if gmax:
+                dex.append(get_response(i, "coalossal-gmax"))
+        case "841":
+            if gmax:
+                dex.append(get_response(i, "flapple-gmax"))
+        case "842":
+            if gmax:
+                dex.append(get_response(i, "appletun-gmax"))
+        case "844":
+            if gmax:
+                dex.append(get_response(i, "sandaconda-gmax"))
+        case "845":
+            if alt:
+                dex.append(get_response(i, "cramorant-gulping"))
+                dex.append(get_response(i, "cramorant-gorging"))
+        case "849":
+            if alt:
+                dex.append(get_response(i, "toxtricity-low-key"))
+            if gmax:
+                dex.append(get_response(i, "toxtricity-amped-gmax"))
+            if alt and gmax:
+                dex.append(get_response(i, "toxtricity-low-key-gmax"))
+        case "851":
+            if gmax:
+                dex.append(get_response(i, "centiskorch-gmax"))
+        case "854":
+            if aesthetic:
+                dex.append(get_response(i, "sinistea-antique"))
+        case "855":
+            if aesthetic:
+                dex.append(get_response(i, "polteageist-antique"))
+        case "858":
+            if gmax:
+                dex.append(get_response(i, "hatterene-gmax"))
+        case "861":
+            if gmax:
+                dex.append(get_response(i, "grimmsnarl-gmax"))
+        case "869":
+            if aesthetic:
+                dex.append(get_response(i, "alcremie-ruby-cream"))
+                dex.append(get_response(i, "alcremie-matcha-cream"))
+                dex.append(get_response(i, "alcremie-mint-cream"))
+                dex.append(get_response(i, "alcremie-lemon-cream"))
+                dex.append(get_response(i, "alcremie-salted-cream"))
+                dex.append(get_response(i, "alcremie-ruby-swirl"))
+                dex.append(get_response(i, "alcremie-caramel-swirl"))
+                dex.append(get_response(i, "alcremie-rainbow-swirl"))
+            if gmax:
+                dex.append(get_response(i, "alcremie-gmax"))
+        case "875":
+            if alt:
+                dex.append(get_response(i, "eiscue-noice"))
+        case "876":
             if gender:
                 dex.append(get_response(i, "indeedee-female"))
-        case "???":
+        case "877":
+            if alt:
+                dex.append(get_response(i, "morpeko-hangry"))
+        case "879":
+            if gmax:
+                dex.append(get_response(i, "copperajah-gmax"))
+        case "884":
+            if gmax:
+                dex.append(get_response(i, "duraludon-gmax"))
+        case "888":
+            if alt:
+                dex.append(get_response(i, "zacian-crowned"))
+        case "889":
+            if alt:
+                dex.append(get_response(i, "zamazenta-crowned"))
+        case "875":
+            if eternamax:
+                dex.append(get_response(i, "eternatus-eternamax"))
+        case "892":
+            if alt:
+                dex.append(get_response(i, "urshifu-rapid-strike"))
+            if gmax:
+                dex.append(get_response(i, "urshifu-single-strike-gmax"))
+            if alt and gmax:
+                dex.append(get_response(i, "urshifu-rapid-strike-gmax"))
+        case "893":
+            if aesthetic:
+                dex.append(get_response(i, "zarude-dada"))
+        case "898":
+            if alt:
+                dex.append(get_response(i, "calyrex-ice"))
+        case "898":
+            if alt:
+                dex.append(get_response(i, "calyrex-shadow"))
+        case "902":
             if gender:
                 dex.append(get_response(i, "basculegion-female"))
+        case "905":
+            if alt:
+                dex.append(get_response(i, "enamorus-terian"))
 
         case "???":
             if gender:
