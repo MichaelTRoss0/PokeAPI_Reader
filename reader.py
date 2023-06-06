@@ -33,6 +33,7 @@ def create_request(i, forms, dex):
     ash = forms["ash greninja"]
     disguise = forms["disguise"]
     eternamax = forms["eternamax"]
+    mounts = forms["mounts"]
 
     dex.append(get_response(i, i))
     match i:  # Go through each Pokémon in National Dex order
@@ -847,9 +848,42 @@ def create_request(i, forms, dex):
             if alt:
                 dex.append(get_response(i, "enamorus-terian"))
 
-        case "???":
+        case "916":
             if gender:
                 dex.append(get_response(i, "oinkologne-female"))
+        case "925":
+            if aesthetic:
+                dex.append(get_response(i, "maushold-family-of-three"))
+        case "931":
+            if alt:
+                dex.append(get_response(i, "squawkabilly-blue-plumage"))
+                dex.append(get_response(i, "squawkabilly-yellow-plumage"))
+                dex.append(get_response(i, "squawkabilly-white-plumage"))
+        case "964":
+            if alt:
+                dex.append(get_response(i, "palafin-hero"))
+        case "978":
+            if aesthetic:
+                dex.append(get_response(i, "tatsugiri-droopy"))
+                dex.append(get_response(i, "tatsugiri-stretchy"))
+        case "982":
+            if aesthetic:
+                dex.append(get_response(i, "dudunsparce-three-segment"))
+        case "999":
+            if alt:
+                dex.append(get_response(i, "ghimmighoul-roaming"))
+        case "1007":
+            if alt:
+                dex.append(get_response(i, "koraidon-limited-build"))
+                dex.append(get_response(i, "koraidon-sprinting-build"))
+                dex.append(get_response(i, "koraidon-swimming-build"))
+                dex.append(get_response(i, "koraidon-gliding-build"))
+        case "1008":
+            if alt:
+                dex.append(get_response(i, "miraidon-low-power"))
+                dex.append(get_response(i, "miraidon-drive-mode"))
+                dex.append(get_response(i, "miraidon-aquatic-mode"))
+                dex.append(get_response(i, "miraidon-gliding-mode"))
 
     return dex
 
@@ -870,6 +904,7 @@ def set_all_true(forms):
     forms["ash greninja"] = True
     forms["disguise"] = True
     forms["eternamax"] = True
+    forms["mounts"] = True
 
     return forms
 

@@ -24,7 +24,8 @@ forms = {
     "ash greninja": False,  # Ash Greninja was removed in Gen IX
     "disguise": False,
 
-    "eternamax": False
+    "eternamax": False,
+    "mounts": False  # Koraidon and Miraidon non-battle forms
 }
 
 print("Will now write basic data of the first " + str(limit) + " Pokémon to file.\n")
