@@ -76,36 +76,207 @@ def parse_name(raw_name, forms):
 
         # Gendered Forms
         case "Meowstic Male":
-            name = "Meowstic"
+            if gender:
+                name = "Male Meowstic"
+            else:
+                name = "Meowstic"
+        case "Meowstic Female":
+            name = "Female Meowstic"
         case "Indeedee Male":
-            name = "Indeedee"
+            if gender:
+                name = "Male Indeedee"
+            else:
+                name = "Indeedee"
+        case "Indeedee Female":
+            name = "Female Indeedee"
         case "Basculegion Male":
-            name = "Basculegion"
+            if gender:
+                name = "Male Basculegion"
+            else:
+                name = "Basculegion"
+        case "Basculegion Female":
+            name = "Female Basculegion"
 
         # Pokémon with alternate forms
+        case "Unown":
+            if aesthetic:
+                name = "Unown A"
+        case "Unown Exclamation":
+            name = "Unown !"
+        case "Unown Question":
+            name = "Unown ?"
+        case "Castform":
+            if alt:
+                name = "Normal Castform"
+        case "Castform Sunny":
+            name = "Sunny Form Castform"
+        case "Castform Rainy":
+            name = "Rainy Form Castform"
+        case "Castform Snowy":
+            name = "Snowy Form Castform"
         case "Deoxys Normal":
-            if not alt:
+            if alt:
+                name = "Normal Forme Deoxys"
+            else:
                 name = "Deoxys"
+        case "Deoxys Attack":
+            name = "Attack Forme Deoxys"
+        case "Deoxys Defense":
+            name = "Defense Forme Deoxys"
+        case "Deoxys Speed":
+            name = "Speed Forme Deoxys"
+        case "Burmy":
+            if aesthetic:
+                name = "Plant Cloak Burmy"
+        case "Burmy Sandy":
+            name = "Sandy Cloak Burmy"
+        case "Burmy Trash":
+            name = "Trash Cloak Burmy"
         case "Wormadam Plant":
-            name = "Wormadam"
+            if alt:
+                name = "Plant Cloak Wormadam"
+            else:
+                name = "Wormadam"
+        case "Wormadam Sandy":
+            name = "Sandy Cloak Wormadam"
+        case "Wormadam Trash":
+            name = "Trash Cloak Wormadam"
+        case "Cherrim":
+            if aesthetic:
+                name = "Overcast Form Cherrim"
+        case "Cherrim Sunshine":
+            name = "Sunshine Form Cherrim"
+        case "Shellos":
+            if aesthetic:
+                name = "West Sea Shellos"
+            else:
+                name = "Shellos"
+        case "Shellos East":
+            name = "East Sea Shellos"
+        case "Gastrodon":
+            if aesthetic:
+                name = "West Sea Gastrodon"
+            else:
+                name = "Gastrodon"
+        case "Gastrodon East":
+            name = "East Sea Gastrodon"
+        case "Rotom Heat":
+            name = "Heat Rotom"
+        case "Rotom Wash":
+            name = "Wash Rotom"
+        case "Rotom Frost":
+            name = "Frost Rotom"
+        case "Rotom Fan":
+            name = "Fan Rotom"
+        case "Rotom Mow":
+            name = "Mow Rotom"
+        case "Dialga Origin":
+            name = "Origin Forme Dialga"
+        case "Palkia Origin":
+            name = "Origin Forme Palkia"
         case "Giratina Altered":
-            name = "Giratina"
+            if not alt:
+                name = "Giratina"
+            else:
+                name = "Altered Forme Giratina"
+        case "Giratina Origin":
+            name = "Origin Forme Giratina"
         case "Shaymin Land":
-            name = "Shaymin"
+            if alt:
+                name = "Land Forme Shaymin"
+            else:
+                name = "Shaymin"
+        case "Shaymin Sky":
+            name = "Sky Forme Shaymin"
+        case "Arceus":
+            if alt:
+                name = "Normal-type Arceus"
+        case "Arceus Bug":
+            name = "Bug-type Arceus"
+        case "Arceus Dark":
+            name = "Dark-type Arceus"
+        case "Arceus Dragon":
+            name = "Dragon-type Arceus"
+        case "Arceus Electric":
+            name = "Electric-type Arceus"
+        case "Arceus Fighting":
+            name = "Fighting-type Arceus"
+        case "Arceus Fire":
+            name = "Fire-type Arceus"
+        case "Arceus Flying":
+            name = "Flying-type Arceus"
+        case "Arceus Ghost":
+            name = "Ghost-type Arceus"
+        case "Arceus Grass":
+            name = "Grass-type Arceus"
+        case "Arceus Ground":
+            name = "Ground-type Arceus"
+        case "Arceus Ice":
+            name = "Ice-type Arceus"
+        case "Arceus Poison":
+            name = "Poison-type Arceus"
+        case "Arceus Psychic":
+            name = "Psychic-type Arceus"
+        case "Arceus Rock":
+            name = "Rock-type Arceus"
+        case "Arceus Steel":
+            name = "Steel-type Arceus"
+        case "Arceus Water":
+            name = "Water-type Arceus"
+        case "Arceus Fairy":
+            name = "Fairy-type Arceus"
         case "Basculin Red Striped":
-            name = "Basculin"
+            if aesthetic:
+                name = "Red-Striped Basculin"
+            else:
+                name = "Basculin"
+        case "Basculin Blue Striped":
+            name = "Blue-Striped Basculin"
         case "Darmanitan Standard":
-            name = "Darmanitan"
+            if alt:
+                name = "Standard Mode Darmanitan"
+            else:
+                name = "Darmanitan"
+        case "Darmanitan Zen":
+            name = "Zen Mode Darmanitan"
+        case "Deerling":
+            if aesthetic:
+                name = "Spring Form Deerling"
+        case "Deerling Summer":
+            name = "Summer Form Deerling"
+        case "Deerling Autumn":
+            name = "Autumn Form Deerling"
+        case "Deerling Winter":
+            name = "Winter Form Deerling"
+        case "Sawsbuck":
+            if aesthetic:
+                name = "Spring Form Sawsbuck"
+        case "Sawsbuck Summer":
+            name = "Summer Form Sawsbuck"
+        case "Sawsbuck Autumn":
+            name = "Autumn Form Sawsbuck"
+        case "Sawsbuck Winter":
+            name = "Winter Form Sawsbuck"
         case "Tornadus Incarnate":
             name = "Tornadus"
+        case "":
+            name = ""
         case "Thundurus Incarnate":
             name = "Thundurus"
+        case "":
+            name = ""
         case "Landorus Incarnate":
             name = "Landorus"
+        case "":
+            name = ""
         case "Keldeo Ordinary":
             name = "Keldeo"
+        case "":
+            name = ""
         case "Meloetta Aria":
             name = "Meloetta"
+        case "":
+            name = ""
         case "Flabebe":
             if not aesthetic:
                 name = "Flabébé"
@@ -127,8 +298,6 @@ def parse_name(raw_name, forms):
             name = "Wishiwashi"
         case "Minior Red Meteor":
             name = "Minior"
-        case "Mimikyu Disguised":
-            name = "Mimikyu"
         case "Toxtricity Amped":
             name = "Toxtricity"
         case "Morpeko Full Belly":
@@ -210,7 +379,10 @@ def parse_name(raw_name, forms):
         case "Darumaka Galar":
             name = "Galarian Darumaka"
         case "Darmanitan Galar":
-            name = "Galarian Darmanitan"
+            if alt:
+                name = "Galarian Standard Mode Darmanitan"
+            else:
+                name = "Galarian Darmanitan"
         case "Darmanitan Galar Zen":
             name = "Galarian Zen Mode Darmanitan"
         case "Yamask Galar":
@@ -277,6 +449,90 @@ def parse_name(raw_name, forms):
             name = "Mega Beedrill"
         case "Pidgeot Mega":
             name = "Mega Pidgeot"
+        case "Slowbro Mega":
+            name = "Mega Slowbro"
+        case "Alakazam Mega":
+            name = "Mega Alakazam"
+        case "Gengar Mega":
+            name = "Mega Gengar"
+        case "Kangaskhan Mega":
+            name = "Mega Kangaskhan"
+        case "Pinsir Mega":
+            name = "Mega Pinsir"
+        case "Gyarados Mega":
+            name = "Mega Gyarados"
+        case "Aerodactyl Mega":
+            name = "Mega Aerodactyl"
+        case "Mewtwo Mega X":
+            name = "Mega Mewtwo X"
+        case "Mewtwo Mega Y":
+            name = "Mega Mewtwo Y"
+        case "Ampharos Mega":
+            name = "Mega Ampharos"
+        case "Steelix Mega":
+            name = "Mega Steelix"
+        case "Scizor Mega":
+            name = "Mega Scizor"
+        case "Heracross Mega":
+            name = "Mega Heracross"
+        case "Houndoom Mega":
+            name = "Mega Houndoom"
+        case "Tyranitar Mega":
+            name = "Mega Tyranitar"
+        case "Sceptile Mega":
+            name = "Mega Sceptile"
+        case "Blaziken Mega":
+            name = "Mega Blaziken"
+        case "Swampert Mega":
+            name = "Mega Swampert"
+        case "Gardevoir Mega":
+            name = "Mega Gardevoir"
+        case "Sableye Mega":
+            name = "Mega Sableye"
+        case "Mawile Mega":
+            name = "Mega Mawile"
+        case "Aggron Mega":
+            name = "Mega Aggron"
+        case "Medicham Mega":
+            name = "Mega Medicham"
+        case "Manectric Mega":
+            name = "Mega Manectric"
+        case "Sharpedo Mega":
+            name = "Mega Sharpedo"
+        case "Camerupt Mega":
+            name = "Mega Camerupt"
+        case "Altaria Mega":
+            name = "Mega Altaria"
+        case "Banette Mega":
+            name = "Mega Banette"
+        case "Absol Mega":
+            name = "Mega Absol"
+        case "Glalie Mega":
+            name = "Mega Glalie"
+        case "Salamence Mega":
+            name = "Mega Salamence"
+        case "Metagross Mega":
+            name = "Mega Metagross"
+        case "Latias Mega":
+            name = "Mega Latias"
+        case "Latois Mega":
+            name = "Mega Latios"
+        case "Rayquaza Mega":
+            name = "Mega Rayquaza"
+        case "Lopunny Mega":
+            name = "Mega Lopunny"
+        case "Garchomp Mega":
+            name = "Mega Garchomp"
+        case "Lucario Mega":
+            name = "Mega Lucario"
+        case "Abomasnow Mega":
+            name = "Mega Abomasnow"
+        case "Gallade Mega":
+            name = "Mega Gallade"
+        case "Audino Mega":
+            name = "Mega Audino"
+        case "Diancie Mega":
+            name = "Mega Diancie"
 
         # Gigantamax Pokémon
         case "Venusaur Gmax":
@@ -289,10 +545,109 @@ def parse_name(raw_name, forms):
             name = "Gigantamax Butterfree"
         case "Pikachu Gmax":
             name = "Gigantamax Pikachu"
+        case "Meowth Gmax":
+            name = "Gigantamax Meowth"
+        case "Machamp Gmax":
+            name = "Gigantamax Machamp"
+        case "Gengar Gmax":
+            name = "Gigantamax Gengar"
+        case "Kingler Gmax":
+            name = "Gigantamax Kingler"
+        case "Lapras Gmax":
+            name = "Gigantamax Lapras"
+        case "Eevee Gmax":
+            name = "Gigantamax Eevee"
+        case "Snorlax Gmax":
+            name = "Gigantamax Snorlax"
+        case "Garbodor Gmax":
+            name = "Gigantamax Garbodor"
+        case "Melmetal Gmax":
+            name = "Gigantamax Melemetal"
+        case "Rilaboom Gmax":
+            name = "Gigantamax Rilaboom"
+        case "Cinderace Gmax":
+            name = "Gigantamax Cinderace"
+        case "Inteleon Gmax":
+            name = "Gigantamax Inteleon"
+        case "Corviknight Gmax":
+            name = "Gigantamax Corviknight"
+        case "Orbeetle Gmax":
+            name = "Gigantamax Orbeetle"
+        case "Drednaw Gmax":
+            name = "Gigantamax Drednaw"
+        case "Coalossal Gmax":
+            name = "Gigantamax Coalossal"
+        case "Flapple Gmax":
+            name = "Gigantamax Flapple"
+        case "Appletun Gmax":
+            name = "Gigantamax Appletun"
+        case "Sandaconda Gmax":
+            name = "Gigantamax Sandaconda"
+        case "Totricity Amped Gmax":
+            name = "Gigantamax Toxtricity"
+        # case "Toxtricity Low Key Gmax":
+        #     name = "Gigantamax Toxtricity"
+        case "Centiskorch Gmax":
+            name = "Gigantamax Centiskorch"
+        case "Hatterene Gmax":
+            name = "Gigantamax Hatterene"
+        case "Grimmsnarl Gmax":
+            name = "Gigantamax Grimmsnarl"
+        case "Alcremie Gmax":
+            name = "Gigantamax Alcremie"
+        case "Copperajah Gmax":
+            name = "Gigantamax Copperajah"
+        case "Duraludon Gmax":
+            name = "Gigantamax Duraludon"
+        case "Urshifu Single Strike Gmax":
+            name = "Gigantamax Single Strike Style Urshifu"
+        case "Urshifu Rapid Strike Gmax":
+            name = "Gigantamax Rapid Strike Style Urshifu"
+
+        # Primal Pokémon
+        case "Kyogre Primal":
+            name = "Primal Kyogre"
+        case "Groudon Primal":
+            name = "Primal Groudon"
+
+        # Unique Pokémon
+        case "Pichu Spiky Eared":
+            name = "Spiky-eared Pichu"
+        case "Greninja Battle Bond":
+            name = "Battle Bond Greninja"
+        case "Floette Eternal":
+            name = "Eternal Flower Floette"
+        case "Rockruff Own Tempo":
+            name = "Own Tempo Rockruff"
 
         # Totem Pokémon
         case "Raticate Totem Alola":
             name = "Totem Alolan Raticate"
+        case "Marowak Totem":
+            name = "Totem Alolan Marowak"
+        case "Gumshoos Totem":
+            name = "Totem Gumshoos"
+        case "Vikavolt Totem":
+            name = "Totem Vikavolt"
+        case "Ribombee Totem":
+            name = "Totem Ribombee"
+        case "Araquanid Totem":
+            name = "Totem Araquanid"
+        case "Lurantis Totem":
+            name = "Totem Lurantis"
+        case "Salazzle Totem":
+            name = "Totem Salazzle"
+        case "Togedemaru Totem":
+            name = "Totem Togedemaru"
+        case "Mimikyu Totem":
+            if disguise:
+                name = "Disguised Totem Mimikyu"
+            else:
+                name = "Totem Mimikyu"
+        case "Mimikyu Totem Busted":
+            name = "Busted Totem Mimikyu"
+        case "Kommo O Totem":
+            name = "Totem Kommo-o"
 
         # Partner Pokémon
         case "Pikachu Starter":
@@ -323,6 +678,37 @@ def parse_name(raw_name, forms):
             name = "Partner Cap Pikachu"
         case "Pikachu World Cap":
             name = "World Cap Pikachu"
+
+        # Mounts
+        case "Koraidon Limited Build":
+            name = "Limited Build Koraidon"
+        case "Koraidon Sprinting Build":
+            name = "Sprinting Build Koraidon"
+        case "Koraidon Swimming Build":
+            name = "Swimming Build Koraidon"
+        case "Koraidon Gliding Build":
+            name = "Gliding Build Koraidon"
+        case "Miraidon Low Power Mode":
+            name = "Low-Power Mode Miraidon"
+        case "Miraidon Drive Mode":
+            name = "Drive Mode Miraidon"
+        case "Miraidon Aquatic Mode":
+            name = "Aquatic Mode Miraidon"
+        case "Miraidon Gliding Mode":
+            name = "Gliding Mode Miraidon"
+
+        # Other Pokémon
+        case "Greninja Ash":
+            name = "Ash-Greninja"
+        case "Mimikyu Disguised":
+            if disguise:
+                name = "Disguised Mimikyu"
+            else:
+                name = "Mimikyu"
+        case "Mimikyu Busted":
+            name = "Busted Mimikyu"
+        case "Eternatus Eternamax":
+            name = "Eternamax Eternatus"
 
         # Template
         case "case":
