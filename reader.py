@@ -378,10 +378,10 @@ def create_request(i, forms, dex):
                 dex.append(get_response(i, "latios-mega"))
         case "382":
             if primal:
-                dex.append(get_response(i, "kyogre-mega"))
+                dex.append(get_response(i, "kyogre-primal"))
         case "383":
             if primal:
-                dex.append(get_response(i, "groudon-mega"))
+                dex.append(get_response(i, "groudon-primal"))
         case "384":
             if mega:
                 dex.append(get_response(i, "rayquaza-mega"))
@@ -773,8 +773,8 @@ def create_request(i, forms, dex):
                 dex.append(get_response(i, "toxtricity-low-key"))
             if gmax:
                 dex.append(get_response(i, "toxtricity-amped-gmax"))
-            if alt and gmax:
-                dex.append(get_response(i, "toxtricity-low-key-gmax"))
+            # if alt and gmax:
+            #     dex.append(get_response(i, "toxtricity-low-key-gmax"))
         case "851":
             if gmax:
                 dex.append(get_response(i, "centiskorch-gmax"))
@@ -882,7 +882,7 @@ def create_request(i, forms, dex):
                 dex.append(get_response(i, "koraidon-gliding-build"))
         case "1008":
             if alt:
-                dex.append(get_response(i, "miraidon-low-power"))
+                dex.append(get_response(i, "miraidon-low-power-mode"))
             if mounts:
                 dex.append(get_response(i, "miraidon-drive-mode"))
                 dex.append(get_response(i, "miraidon-aquatic-mode"))
