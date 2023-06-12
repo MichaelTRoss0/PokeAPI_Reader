@@ -477,6 +477,7 @@ def create_request(i, forms, dex):
         case "550":
             if aesthetic:
                 dex.append(get_response(i, "basculin-blue-striped"))
+            if regional:
                 dex.append(get_response(i, "basulin-white-striped"))
         case "554":
             if regional:
@@ -875,12 +876,14 @@ def create_request(i, forms, dex):
         case "1007":
             if alt:
                 dex.append(get_response(i, "koraidon-limited-build"))
+            if mounts:
                 dex.append(get_response(i, "koraidon-sprinting-build"))
                 dex.append(get_response(i, "koraidon-swimming-build"))
                 dex.append(get_response(i, "koraidon-gliding-build"))
         case "1008":
             if alt:
                 dex.append(get_response(i, "miraidon-low-power"))
+            if mounts:
                 dex.append(get_response(i, "miraidon-drive-mode"))
                 dex.append(get_response(i, "miraidon-aquatic-mode"))
                 dex.append(get_response(i, "miraidon-gliding-mode"))
