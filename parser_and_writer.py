@@ -258,54 +258,453 @@ def parse_name(raw_name, forms):
         case "Sawsbuck Winter":
             name = "Winter Form Sawsbuck"
         case "Tornadus Incarnate":
-            name = "Tornadus"
-        case "":
-            name = ""
-        case "Thundurus Incarnate":
-            name = "Thundurus"
-        case "":
-            name = ""
-        case "Landorus Incarnate":
-            name = "Landorus"
-        case "":
-            name = ""
-        case "Keldeo Ordinary":
-            name = "Keldeo"
-        case "":
-            name = ""
-        case "Meloetta Aria":
-            name = "Meloetta"
-        case "":
-            name = ""
-        case "Flabebe":
-            if not aesthetic:
-                name = "Flabébé"
+            if alt:
+                name = "Incarnate Forme Tornadus"
             else:
+                name = "Tornadus"
+        case "Tornadus Therian":
+            name = "Therian Forme Tornadus"
+        case "Thundurus Incarnate":
+            if alt:
+                name = "Incarnate Forme Thundurus"
+            else:
+                name = "Thundurus"
+        case "Thundurus Therian":
+            name = "Therian Forme Thundurus"
+        case "Landorus Incarnate":
+            if alt:
+                name = "Incarnate Forme Landorus"
+            else:
+                name = "Landorus"
+        case "Landorus Therian":
+            name = "Therian Forme Landorus"
+        case "Kyurem White":
+            name = "White Kyurem"
+        case "Kyurem Black":
+            name = "Black Kyurem"
+        case "Keldeo Ordinary":
+            if aesthetic:
+                name = "Ordinary Form Keldeo"
+            else:
+                name = "Keldeo"
+        case "Keldeo Resolute":
+            name = "Resolute Form Keldeo"
+        case "Meloetta Aria":
+            if alt:
+                name = "Aria Forme Meloetta"
+            else:
+                name = "Meloetta"
+        case "Meloetta Pirouette":
+            name = "Pirouette Forme Meloetta"
+        case "Genesect Douse":
+            name = "Douse Drive Genesect"
+        case "Genesect Shock":
+            name = "Shock Drive Genesect"
+        case "Genesect Burn":
+            name = "Burn Drive Genesect"
+        case "Genesect Chill":
+            name = "Chill Drive Genesect"
+        case "Vivillon":
+            if aesthetic:
+                name = "Meadow Pattern Vivillon"
+        case "Vivillon Icy Snow":
+            name = "Icy Snow Pattern Vivillon"
+        case "Vivillon Polar":
+            name = "Polar Pattern Vivillon"
+        case "Vivillon Tundra":
+            name = "Tundra Pattern Vivillon"
+        case "Vivillon Continental":
+            name = "Continental Pattern Vivillon"
+        case "Vivillon Garden":
+            name = "Garden Pattern Vivillon"
+        case "Vivillon Elegant":
+            name = "Elegant Pattern Vivillon"
+        case "Vivillon Modern":
+            name = "Modern Pattern Vivillon"
+        case "Vivillon Marine":
+            name = "Marine Pattern Vivillon"
+        case "Vivillon Archipelago":
+            name = "Archipelago Pattern Vivillon"
+        case "Vivillon High Plains":
+            name = "High Plains Pattern Vivillon"
+        case "Vivillon Sandstorm":
+            name = "Sandstorm Pattern Vivillon"
+        case "Vivillon River":
+            name = "River Pattern Vivillon"
+        case "Vivillon Monsoon":
+            name = "Monsoon Pattern Vivillon"
+        case "Vivillon Savanna":
+            name = "Savanna Pattern Vivillon"
+        case "Vivillon Sun":
+            name = "Sun Pattern Vivillon"
+        case "Vivillon Ocean":
+            name = "Ocean Pattern Vivillon"
+        case "Vivillon Jungle":
+            name = "Jungle Pattern Vivillon"
+        case "Vivillon Fancy":
+            name = "Fancy Pattern Vivillon"
+        case "Vivillon Poke Ball":
+            name = "Poké Ball Pattern Vivillon"
+        case "Flabebe":
+            if aesthetic:
                 name = "Red Flower Flabébé"
+            else:
+                name = "Flabébé"
+        case "Flabebe Yellow":
+            name = "Yellow Flower Flabébé"
+        case "Flabebe Orange":
+            name = "Orange Flower Flabébé"
+        case "Flabebe Blue":
+            name = "Blue Flower Flabébé"
+        case "Flabebe White":
+            name = "White Flower Flabébé"
+        case "Floette":
+            if aesthetic:
+                name = "Red Flower Floette"
+            else:
+                name = "Floette"
+        case "Floette Yellow":
+            name = "Yellow Flower Floette"
+        case "Floette Orange":
+            name = "Orange Flower Floette"
+        case "Floette Blue":
+            name = "Blue Flower Floette"
+        case "Floette White":
+            name = "White Flower Floette"
+        case "Florges":
+            if aesthetic:
+                name = "Red Flower Florges"
+            else:
+                name = "Florges"
+        case "Florges Yellow":
+            name = "Yellow Flower Florges"
+        case "Florges Orange":
+            name = "Orange Flower Florges"
+        case "Florges Blue":
+            name = "Blue Flower Florges"
+        case "Florges White":
+            name = "White Flower Florges"
+        case "Furfrou":
+            if aesthetic:
+                name = "Furfrou Natural Form"
+            else:
+                name = "Furfrou"
+        case "Furfrou Heart":
+            name = "Heart Trim Furfrou"
+        case "Furfrou Star":
+            name = "Star Trim Furfrou"
+        case "Furfrou Diamond":
+            name = "Diamond Trim Furfrou"
+        case "Furfrou Debutante":
+            name = "Debutante Trim Furfrou"
+        case "Furfrou Matron":
+            name = "Matron Trim Furfrou"
+        case "Furfrou Dandy":
+            name = "Dandy Trim Furfrou"
+        case "Furfrou La Reine":
+            name = "La Reine Trim Furfrou"
+        case "Furfrou Kabuki":
+            name = "Kabuki Trim Furfrou"
+        case "Furfrou Pharaoh":
+            name = "Pharaoh Trim Furfrou"
         case "Aegislash Shield":
-            name = "Aegislash"
+            if alt:
+                name = "Shield Forme Aegislash"
+            else:
+                name = "Aegislash"
+        case "Aegislash Blade":
+            name = "Blade Forme Aegislash"
         case "Pumpkaboo Average":
-            name = "Pumpkaboo"
+            if alt:
+                name = "Average Size Pumpkaboo"
+            else:
+                name = "Pumpkaboo"
+        case "Pumpkaboo Small":
+            name = "Small Size Pumpkaboo"
+        case "Pumpkaboo Large":
+            name = "Large Size Pumpkaboo"
+        case "Pumpkaboo Super":
+            name = "Super Size Pumpkaboo"
         case "Gourgeist Average":
-            name = "Gourgeist"
+            if alt:
+                name = "Average Size Gourgeist"
+            else:
+                name = "Gourgeist"
+        case "Gourgeist Small":
+            name = "Small Size Gourgeist"
+        case "Gourgeist Large":
+            name = "Large Size Gourgeist"
+        case "Gourgeist Super":
+            name = "Super Size Gourgeist"
+        case "Xerneas":
+            if aesthetic:
+                name = "Active Mode Xerneas"
+            else:
+                name = "Xerneas"
+        case "Xerneas Neutral":
+            name = "Neutral Mode Xerneas"
         case "Zygarde 50":
-            name = "Zygarde"
+            if alt:
+                name = "Zygarde 50% Forme"
+            else:
+                name = "Zygarde"
+        case "Zygarde 10":
+            name = "Zygarde 10% Forme"
+        case "Zygarde 50 Power Construct":
+            name = "Power Construct Zygarde 50% Forme"
+        case "Zygarde 10 Power Construct":
+            name = "Power Construct Zygarde 10% Forme"
+        case "Zygarde Complete":
+            name = "Zygarde Complete Forme"
+        case "Hoopa":
+            if alt:
+                name = "Hoopa Confined"
+            else:
+                name = "Hoopa"
         case "Oricorio Baile":
-            name = "Oricorio"
+            if alt:
+                name = "Baile Style Oricorio"
+            else:
+                name = "Oricorio"
+        case "Oricorio Pom Pom":
+            name = "Pom-Pom Style Oricorio"
+        case "Oricorio Pau":
+            name = "Pau Style Oricorio"
+        case "Oricorio Sensu":
+            name = "Sensu Style Oricorio"
         case "Lycanroc Midday":
-            name = "Lycanroc"
+            if alt:
+                name = "Midday Form Lycanroc"
+            else:
+                name = "Lycanroc"
+        case "Lycanroc Midnight":
+            name = "Midnight Form Lycanroc"
+        case "Lycanroc Dusk":
+            name = "Dusk Form Lycanroc"
         case "Wishiwashi Solo":
-            name = "Wishiwashi"
+            if alt:
+                name = "Solo Form Wishiwashi"
+            else:
+                name = "Wishiwashi"
+        case "Wishiwashi School":
+            name = "School Form Wishiwashi"
+        case "Silvally":
+            if alt:
+                name = "Normal-type Silvally"
+        case "Silvally Fighting":
+            name = "Fighting-type Silvally"
+        case "Silvally Flying":
+            name = "Flying-type Silvally"
+        case "Silvally Poison":
+            name = "Poison-type Silvally"
+        case "Silvally Ground":
+            name = "Ground-type Silvally"
+        case "Silvally Rock":
+            name = "Rock-type Silvally"
+        case "Silvally Bug":
+            name = "Bug-type Silvally"
+        case "Silvally Ghost":
+            name = "Ghost-type Silvally"
+        case "Silvally Steel":
+            name = "Steel-type Silvally"
+        case "Silvally Fire":
+            name = "Fire-type Silvally"
+        case "Silvally Water":
+            name = "Water-type Silvally"
+        case "Silvally Grass":
+            name = "Grass-type Silvally"
+        case "Silvally Electric":
+            name = "Electric-type Silvally"
+        case "Silvally Psychic":
+            name = "Psychic-type Silvally"
+        case "Silvally Ice":
+            name = "Ice-type Silvally"
+        case "Silvally Dragon":
+            name = "Dragon-type Silvally"
+        case "Silvally Dark":
+            name = "Dark-type Silvally"
+        case "Silvally Fairy":
+            name = "Fairy-type Silvally"
         case "Minior Red Meteor":
-            name = "Minior"
+            if alt:
+                name = "Meteor Form Minior"
+            else:
+                name = "Minior"
+        case "Minior Red":
+            if aesthetic:
+                name = "Red Core Minior"
+            else:
+                name = "Core Form Minior"
+        case "Minior Orange":
+            name = "Orange Core Minior"
+        case "Minior Yellow":
+            name = "Yellow Core Minior"
+        case "Minior Green":
+            name = "Green Core Minior"
+        case "Minior Blue":
+            name = "Blue Core Minior"
+        case "Minior Indigo":
+            name = "Indigo Core Minior"
+        case "Minior Violet":
+            name = "Violet Core Minior"
+        case "Necrozma Dusk":
+            name = "Dusk Mane Necrozma"
+        case "Necrozma Dawn":
+            name = "Dawn Wings Necrozma"
+        case "Necrozma Ultra":
+            name = "Ultra Necrozma"
+        case "Magearna Original":
+            name = "Original Color Magearna"
+        case "Cramorant Gulping":
+            name = "Gulping Form Cramorant"
+        case "Cramorant Gorging":
+            name = "Gorging Form Cramorant"
         case "Toxtricity Amped":
-            name = "Toxtricity"
+            if alt:
+                name = "Amped Form Toxtricity"
+            else:
+                name = "Toxtricity"
+        case "Toxtricity Low Key":
+            name = "Low Key Form Toxtricity"
+        case "Sinistea":
+            if aesthetic:
+                name = "Phony Form Sinistea"
+        case "Sinistea Antique":
+            name = "Antique Form Sinistea"
+        case "Polteageist":
+            if aesthetic:
+                name = "Phony Form Polteageist"
+        case "Polteageist Antique":
+            name = "Antique Form Polteageist"
+        case "Alcremie":
+            if aesthetic:
+                name = "Vanilla Cream Alcremie"
+        case "Alcremie Ruby Cream":
+            name = "Ruby Cream Alcremie"
+        case "Alcremie Matcha Cream":
+            name = "Matcha Cream Alcremie"
+        case "Alcremie Mint Cream":
+            name = "Mint Cream Alcremie"
+        case "Alcremie Lemon Cream":
+            name = "Lemon Cream Alcremie"
+        case "Alcremie Salted Cream":
+            name = "Salted Cream Alcremie"
+        case "Alcremie Ruby Swirl":
+            name = "Ruby Swirl Alcremie"
+        case "Alcremie Caramel Swirl":
+            name = "Caramel Swirl Alcremie"
+        case "Alcremie Rainbow Swirl":
+            name = "Rainbow Swirl Alcremie"
+        case "Eiscue Ice":
+            if alt:
+                name = "Ice Face Form Eiscue"
+            else:
+                name = "Eiscue"
+        case "Eiscue Noice":
+            name = "Noice Face Form Eiscue"
         case "Morpeko Full Belly":
-            name = "Morpeko"
+            if alt:
+                name = "Full Belly Mode Morpeko"
+            else:
+                name = "Morpeko"
+        case "Morpeko Hangry":
+            name = "Hangry Mode Morpeko"
+        case "Zacian":
+            if alt:
+                name = "Hero of Many Battles Zacian"
+        case "Zacian Crowned":
+            name = "Crowned Sword Zacian"
+        case "Zamazenta":
+            if alt:
+                name = "Hero of Many Battles Zamazenta"
+        case "Zamazenta Crowned":
+            name = "Crowned Shield Zamazenta"
         case "Urshifu Single Strike":
-            name = "Urshifu"
+            if alt:
+                name = "Single Strike Style Urshifu"
+            else:
+                name = "Urshifu"
+        case "Urshifu Single Strike":
+            name = "Single Strike Style Urshifu"
+        case "Zarude Dada":
+            name = "Dada Zarude"
+        case "Calyrex Ice":
+            name = "Ice Rider Calyrex"
+        case "Calyrex Shadow":
+            name = "Shadow Rider Calyrex"
         case "Enamorus Incarnate":
-            name = "Enamorus"
+            if alt:
+                name = "Incarnate Forme Enamorus"
+            else:
+                name = "Enamorus"
+        case "Enamorus Therian":
+            name = "Therian Forme Enamorus"
+        case "Maushold":
+            if aesthetic:
+                name = "Family of Four Maushold"
+            else:
+                name = "Maushold"
+        case "Maushold Family of Three":
+            name = "Family of Three Maushold"
+        case "Squawkabilly":
+            if aesthetic:
+                name = "Green Plumage Squawkabilly"
+        case "Squawkabilly Blue Plumage":
+            name = "Blue Plumage Squawkabilly"
+        case "Squawkabilly Yellow Plumage":
+            name = "Yellow Plumage Squawkabilly"
+        case "Squawkabilly White Plumage":
+            name = "White Plumage Squawkabilly"
+        case "Palafin":
+            if alt:
+                name = "Zero Form Palafin"
+            else:
+                name = "Palafin"
+        case "Palafin Hero":
+            name = "Hero Form Palafin"
+        case "Tatsugiri":
+            if aesthetic:
+                name = "Curly Form Tatsugiri"
+            else:
+                name = "Tatsugiri"
+        case "Tatsugiri Droopy":
+            name = "Droopy Form Tatsugiri"
+        case "Tatsugiri Stretchy":
+            name = "Stretchy Form Tatsugiri"
+        case "Dudunsparce":
+            if aesthetic:
+                name = "Two-Segment Form Dudunsparce"
+        case "Dudunsparce Three Segment":
+            name = "Three Segment Form Dudunsparce"
+        case "Gimmighoul":
+            if alt:
+                name = "Chest Form Gimmighoul"
+            else:
+                name = "Gimmighoul"
+        case "Gimmighoul Roaming":
+            name = "Roaming Form Gimmighoul"
+        case "Koraidon":
+            if mounts:
+                name = "Apex Build Koraidon"
+        case "Koraidon Limited Build":
+            name = "Limited Build Koraidon"
+        case "Koraidon Sprinting Build":
+            name = "Sprinting Build Koraidon"
+        case "Koraidon Swimming Build":
+            name = "Swimming Build Koraidon"
+        case "Koraidon Gliding Build":
+            name = "Gliding Build Koraidon"
+        case "Miraidon":
+            if mounts:
+                name = "Ultimate Mode Miraidon"
+        case "Miraidon Low-Power Mode":
+            name = "Low-Power Mode Miraidon"
+        case "Miraidon Drive Mode":
+            name = "Drive Mode Miraidon"
+        case "Miraidon Aquatic Mode":
+            name = "Aquatic Mode Miraidon"
+        case "Miraidon Glide Mode":
+            name = "Glide Mode Miraidon"
 
         # Alolan Forms
         case "Rattata Alola":
