@@ -528,8 +528,8 @@ def create_request(i, forms, dex):
                 dex.append(get_response(i, "landorus-therian"))
         case "646":
             if alt:
-                dex.append(get_response(i, "kyurem-black"))
                 dex.append(get_response(i, "kyurem-white"))
+                dex.append(get_response(i, "kyurem-black"))
         case "647":
             if aesthetic:
                 dex.append(get_response(i, "keldeo-resolute"))
@@ -594,9 +594,11 @@ def create_request(i, forms, dex):
                 dex.append(get_response(i, "furfrou-heart"))
                 dex.append(get_response(i, "furfrou-star"))
                 dex.append(get_response(i, "furfrou-diamond"))
+                dex.append(get_response(i, "furfrou-debutante"))
                 dex.append(get_response(i, "furfrou-matron"))
                 dex.append(get_response(i, "furfrou-dandy"))
                 dex.append(get_response(i, "furfrou-la-reine"))
+                dex.append(get_response(i, "furfrou-kabuki"))
                 dex.append(get_response(i, "furfrou-pharaoh"))
         case "678":
             if gender:
@@ -628,10 +630,10 @@ def create_request(i, forms, dex):
                 dex.append(get_response(i, "xerneas-neutral"))
         case "718":
             if alt:
-                dex.append(get_response(i, "zygarde-10-power-construct"))
-                dex.append(get_response(i, "zygarde-50-power-construct"))
-                dex.append(get_response(i, "zygarde-complete"))
                 dex.append(get_response(i, "zygarde-10"))
+                dex.append(get_response(i, "zygarde-50-power-construct"))
+                dex.append(get_response(i, "zygarde-10-power-construct"))
+                dex.append(get_response(i, "zygarde-complete"))
         case "719":
             if mega:
                 dex.append(get_response(i, "diancie-mega"))
@@ -695,14 +697,16 @@ def create_request(i, forms, dex):
                 dex.append(get_response(i, "silvally-dark"))
                 dex.append(get_response(i, "silvally-fairy"))
         case "774":
+            # if aesthetic:
+            #     dex.append(get_response(i, "minior-orange-meteor"))
+            #     dex.append(get_response(i, "minior-yellow-meteor"))
+            #     dex.append(get_response(i, "minior-green-meteor"))
+            #     dex.append(get_response(i, "minior-blue-meteor"))
+            #     dex.append(get_response(i, "minior-indigo-meteor"))
+            #     dex.append(get_response(i, "minior-violet-meteor"))
             if alt:
-                dex.append(get_response(i, "minior-orange-meteor"))
-                dex.append(get_response(i, "minior-yellow-meteor"))
-                dex.append(get_response(i, "minior-green-meteor"))
-                dex.append(get_response(i, "minior-blue-meteor"))
-                dex.append(get_response(i, "minior-indigo-meteor"))
-                dex.append(get_response(i, "minior-violet-meteor"))
                 dex.append(get_response(i, "minior-red"))
+            if aesthetic and alt:
                 dex.append(get_response(i, "minior-orange"))
                 dex.append(get_response(i, "minior-yellow"))
                 dex.append(get_response(i, "minior-green"))
@@ -847,7 +851,7 @@ def create_request(i, forms, dex):
                 dex.append(get_response(i, "basculegion-female"))
         case "905":
             if alt:
-                dex.append(get_response(i, "enamorus-terian"))
+                dex.append(get_response(i, "enamorus-therian"))
 
         case "916":
             if gender:
@@ -874,16 +878,14 @@ def create_request(i, forms, dex):
             if alt:
                 dex.append(get_response(i, "ghimmighoul-roaming"))
         case "1007":
-            if alt:
-                dex.append(get_response(i, "koraidon-limited-build"))
             if mounts:
+                dex.append(get_response(i, "koraidon-limited-build"))
                 dex.append(get_response(i, "koraidon-sprinting-build"))
                 dex.append(get_response(i, "koraidon-swimming-build"))
                 dex.append(get_response(i, "koraidon-gliding-build"))
         case "1008":
-            if alt:
-                dex.append(get_response(i, "miraidon-low-power-mode"))
             if mounts:
+                dex.append(get_response(i, "miraidon-low-power-mode"))
                 dex.append(get_response(i, "miraidon-drive-mode"))
                 dex.append(get_response(i, "miraidon-aquatic-mode"))
                 dex.append(get_response(i, "miraidon-gliding-mode"))
