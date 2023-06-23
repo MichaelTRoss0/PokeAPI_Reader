@@ -98,13 +98,13 @@ def parse_name(raw_name, forms):
             name = "Female Basculegion"
 
         # Pokémon with alternate forms
-        case "Unown":
-            if aesthetic:
-                name = "Unown A"
-        case "Unown Exclamation":
-            name = "Unown !"
-        case "Unown Question":
-            name = "Unown ?"
+        # case "Unown":
+        #     if aesthetic:
+        #         name = "Unown A"
+        # case "Unown Exclamation":
+        #     name = "Unown !"
+        # case "Unown Question":
+        #     name = "Unown ?"
         case "Castform":
             if alt:
                 name = "Normal Castform"
@@ -125,13 +125,13 @@ def parse_name(raw_name, forms):
             name = "Defense Forme Deoxys"
         case "Deoxys Speed":
             name = "Speed Forme Deoxys"
-        case "Burmy":
-            if aesthetic:
-                name = "Plant Cloak Burmy"
-        case "Burmy Sandy":
-            name = "Sandy Cloak Burmy"
-        case "Burmy Trash":
-            name = "Trash Cloak Burmy"
+        # case "Burmy":
+        #     if aesthetic:
+        #         name = "Plant Cloak Burmy"
+        # case "Burmy Sandy":
+        #     name = "Sandy Cloak Burmy"
+        # case "Burmy Trash":
+        #     name = "Trash Cloak Burmy"
         case "Wormadam Plant":
             if alt:
                 name = "Plant Cloak Wormadam"
@@ -141,25 +141,25 @@ def parse_name(raw_name, forms):
             name = "Sandy Cloak Wormadam"
         case "Wormadam Trash":
             name = "Trash Cloak Wormadam"
-        case "Cherrim":
-            if aesthetic:
-                name = "Overcast Form Cherrim"
-        case "Cherrim Sunshine":
-            name = "Sunshine Form Cherrim"
-        case "Shellos":
-            if aesthetic:
-                name = "West Sea Shellos"
-            else:
-                name = "Shellos"
-        case "Shellos East":
-            name = "East Sea Shellos"
-        case "Gastrodon":
-            if aesthetic:
-                name = "West Sea Gastrodon"
-            else:
-                name = "Gastrodon"
-        case "Gastrodon East":
-            name = "East Sea Gastrodon"
+        # case "Cherrim":
+        #     if aesthetic:
+        #         name = "Overcast Form Cherrim"
+        # case "Cherrim Sunshine":
+        #     name = "Sunshine Form Cherrim"
+        # case "Shellos":
+        #     if aesthetic:
+        #         name = "West Sea Shellos"
+        #     else:
+        #         name = "Shellos"
+        # case "Shellos East":
+        #     name = "East Sea Shellos"
+        # case "Gastrodon":
+        #     if aesthetic:
+        #         name = "West Sea Gastrodon"
+        #     else:
+        #         name = "Gastrodon"
+        # case "Gastrodon East":
+        #     name = "East Sea Gastrodon"
         case "Rotom Heat":
             name = "Heat Rotom"
         case "Rotom Wash":
@@ -188,45 +188,45 @@ def parse_name(raw_name, forms):
                 name = "Shaymin"
         case "Shaymin Sky":
             name = "Sky Forme Shaymin"
-        case "Arceus":
-            if alt:
-                name = "Normal-type Arceus"
-        case "Arceus Bug":
-            name = "Bug-type Arceus"
-        case "Arceus Dark":
-            name = "Dark-type Arceus"
-        case "Arceus Dragon":
-            name = "Dragon-type Arceus"
-        case "Arceus Electric":
-            name = "Electric-type Arceus"
-        case "Arceus Fighting":
-            name = "Fighting-type Arceus"
-        case "Arceus Fire":
-            name = "Fire-type Arceus"
-        case "Arceus Flying":
-            name = "Flying-type Arceus"
-        case "Arceus Ghost":
-            name = "Ghost-type Arceus"
-        case "Arceus Grass":
-            name = "Grass-type Arceus"
-        case "Arceus Ground":
-            name = "Ground-type Arceus"
-        case "Arceus Ice":
-            name = "Ice-type Arceus"
-        case "Arceus Poison":
-            name = "Poison-type Arceus"
-        case "Arceus Psychic":
-            name = "Psychic-type Arceus"
-        case "Arceus Rock":
-            name = "Rock-type Arceus"
-        case "Arceus Steel":
-            name = "Steel-type Arceus"
-        case "Arceus Water":
-            name = "Water-type Arceus"
-        case "Arceus Fairy":
-            name = "Fairy-type Arceus"
+        # case "Arceus":
+        #     if alt:
+        #         name = "Normal-type Arceus"
+        # case "Arceus Bug":
+        #     name = "Bug-type Arceus"
+        # case "Arceus Dark":
+        #     name = "Dark-type Arceus"
+        # case "Arceus Dragon":
+        #     name = "Dragon-type Arceus"
+        # case "Arceus Electric":
+        #     name = "Electric-type Arceus"
+        # case "Arceus Fighting":
+        #     name = "Fighting-type Arceus"
+        # case "Arceus Fire":
+        #     name = "Fire-type Arceus"
+        # case "Arceus Flying":
+        #     name = "Flying-type Arceus"
+        # case "Arceus Ghost":
+        #     name = "Ghost-type Arceus"
+        # case "Arceus Grass":
+        #     name = "Grass-type Arceus"
+        # case "Arceus Ground":
+        #     name = "Ground-type Arceus"
+        # case "Arceus Ice":
+        #     name = "Ice-type Arceus"
+        # case "Arceus Poison":
+        #     name = "Poison-type Arceus"
+        # case "Arceus Psychic":
+        #     name = "Psychic-type Arceus"
+        # case "Arceus Rock":
+        #     name = "Rock-type Arceus"
+        # case "Arceus Steel":
+        #     name = "Steel-type Arceus"
+        # case "Arceus Water":
+        #     name = "Water-type Arceus"
+        # case "Arceus Fairy":
+        #     name = "Fairy-type Arceus"
         case "Basculin Red Striped":
-            if aesthetic:
+            if alt:
                 name = "Red-Striped Basculin"
             else:
                 name = "Basculin"
@@ -239,24 +239,24 @@ def parse_name(raw_name, forms):
                 name = "Darmanitan"
         case "Darmanitan Zen":
             name = "Zen Mode Darmanitan"
-        case "Deerling":
-            if aesthetic:
-                name = "Spring Form Deerling"
-        case "Deerling Summer":
-            name = "Summer Form Deerling"
-        case "Deerling Autumn":
-            name = "Autumn Form Deerling"
-        case "Deerling Winter":
-            name = "Winter Form Deerling"
-        case "Sawsbuck":
-            if aesthetic:
-                name = "Spring Form Sawsbuck"
-        case "Sawsbuck Summer":
-            name = "Summer Form Sawsbuck"
-        case "Sawsbuck Autumn":
-            name = "Autumn Form Sawsbuck"
-        case "Sawsbuck Winter":
-            name = "Winter Form Sawsbuck"
+        # case "Deerling":
+        #     if aesthetic:
+        #         name = "Spring Form Deerling"
+        # case "Deerling Summer":
+        #     name = "Summer Form Deerling"
+        # case "Deerling Autumn":
+        #     name = "Autumn Form Deerling"
+        # case "Deerling Winter":
+        #     name = "Winter Form Deerling"
+        # case "Sawsbuck":
+        #     if aesthetic:
+        #         name = "Spring Form Sawsbuck"
+        # case "Sawsbuck Summer":
+        #     name = "Summer Form Sawsbuck"
+        # case "Sawsbuck Autumn":
+        #     name = "Autumn Form Sawsbuck"
+        # case "Sawsbuck Winter":
+        #     name = "Winter Form Sawsbuck"
         case "Tornadus Incarnate":
             if alt:
                 name = "Incarnate Forme Tornadus"
@@ -296,117 +296,118 @@ def parse_name(raw_name, forms):
                 name = "Meloetta"
         case "Meloetta Pirouette":
             name = "Pirouette Forme Meloetta"
-        case "Genesect Douse":
-            name = "Douse Drive Genesect"
-        case "Genesect Shock":
-            name = "Shock Drive Genesect"
-        case "Genesect Burn":
-            name = "Burn Drive Genesect"
-        case "Genesect Chill":
-            name = "Chill Drive Genesect"
-        case "Vivillon":
-            if aesthetic:
-                name = "Meadow Pattern Vivillon"
-        case "Vivillon Icy Snow":
-            name = "Icy Snow Pattern Vivillon"
-        case "Vivillon Polar":
-            name = "Polar Pattern Vivillon"
-        case "Vivillon Tundra":
-            name = "Tundra Pattern Vivillon"
-        case "Vivillon Continental":
-            name = "Continental Pattern Vivillon"
-        case "Vivillon Garden":
-            name = "Garden Pattern Vivillon"
-        case "Vivillon Elegant":
-            name = "Elegant Pattern Vivillon"
-        case "Vivillon Modern":
-            name = "Modern Pattern Vivillon"
-        case "Vivillon Marine":
-            name = "Marine Pattern Vivillon"
-        case "Vivillon Archipelago":
-            name = "Archipelago Pattern Vivillon"
-        case "Vivillon High Plains":
-            name = "High Plains Pattern Vivillon"
-        case "Vivillon Sandstorm":
-            name = "Sandstorm Pattern Vivillon"
-        case "Vivillon River":
-            name = "River Pattern Vivillon"
-        case "Vivillon Monsoon":
-            name = "Monsoon Pattern Vivillon"
-        case "Vivillon Savanna":
-            name = "Savanna Pattern Vivillon"
-        case "Vivillon Sun":
-            name = "Sun Pattern Vivillon"
-        case "Vivillon Ocean":
-            name = "Ocean Pattern Vivillon"
-        case "Vivillon Jungle":
-            name = "Jungle Pattern Vivillon"
-        case "Vivillon Fancy":
-            name = "Fancy Pattern Vivillon"
-        case "Vivillon Poke Ball":
-            name = "Poké Ball Pattern Vivillon"
+        # case "Genesect Douse":
+        #     name = "Douse Drive Genesect"
+        # case "Genesect Shock":
+        #     name = "Shock Drive Genesect"
+        # case "Genesect Burn":
+        #     name = "Burn Drive Genesect"
+        # case "Genesect Chill":
+        #     name = "Chill Drive Genesect"
+        # case "Vivillon":
+        #     if aesthetic:
+        #         name = "Meadow Pattern Vivillon"
+        # case "Vivillon Icy Snow":
+        #     name = "Icy Snow Pattern Vivillon"
+        # case "Vivillon Polar":
+        #     name = "Polar Pattern Vivillon"
+        # case "Vivillon Tundra":
+        #     name = "Tundra Pattern Vivillon"
+        # case "Vivillon Continental":
+        #     name = "Continental Pattern Vivillon"
+        # case "Vivillon Garden":
+        #     name = "Garden Pattern Vivillon"
+        # case "Vivillon Elegant":
+        #     name = "Elegant Pattern Vivillon"
+        # case "Vivillon Modern":
+        #     name = "Modern Pattern Vivillon"
+        # case "Vivillon Marine":
+        #     name = "Marine Pattern Vivillon"
+        # case "Vivillon Archipelago":
+        #     name = "Archipelago Pattern Vivillon"
+        # case "Vivillon High Plains":
+        #     name = "High Plains Pattern Vivillon"
+        # case "Vivillon Sandstorm":
+        #     name = "Sandstorm Pattern Vivillon"
+        # case "Vivillon River":
+        #     name = "River Pattern Vivillon"
+        # case "Vivillon Monsoon":
+        #     name = "Monsoon Pattern Vivillon"
+        # case "Vivillon Savanna":
+        #     name = "Savanna Pattern Vivillon"
+        # case "Vivillon Sun":
+        #     name = "Sun Pattern Vivillon"
+        # case "Vivillon Ocean":
+        #     name = "Ocean Pattern Vivillon"
+        # case "Vivillon Jungle":
+        #     name = "Jungle Pattern Vivillon"
+        # case "Vivillon Fancy":
+        #     name = "Fancy Pattern Vivillon"
+        # case "Vivillon Poke Ball":
+        #     name = "Poké Ball Pattern Vivillon"
         case "Flabebe":
-            if aesthetic:
-                name = "Red Flower Flabébé"
-            else:
-                name = "Flabébé"
-        case "Flabebe Yellow":
-            name = "Yellow Flower Flabébé"
-        case "Flabebe Orange":
-            name = "Orange Flower Flabébé"
-        case "Flabebe Blue":
-            name = "Blue Flower Flabébé"
-        case "Flabebe White":
-            name = "White Flower Flabébé"
-        case "Floette":
-            if aesthetic:
-                name = "Red Flower Floette"
-            else:
-                name = "Floette"
-        case "Floette Yellow":
-            name = "Yellow Flower Floette"
-        case "Floette Orange":
-            name = "Orange Flower Floette"
-        case "Floette Blue":
-            name = "Blue Flower Floette"
-        case "Floette White":
-            name = "White Flower Floette"
-        case "Florges":
-            if aesthetic:
-                name = "Red Flower Florges"
-            else:
-                name = "Florges"
-        case "Florges Yellow":
-            name = "Yellow Flower Florges"
-        case "Florges Orange":
-            name = "Orange Flower Florges"
-        case "Florges Blue":
-            name = "Blue Flower Florges"
-        case "Florges White":
-            name = "White Flower Florges"
-        case "Furfrou":
-            if aesthetic:
-                name = "Furfrou Natural Form"
-            else:
-                name = "Furfrou"
-        case "Furfrou Heart":
-            name = "Heart Trim Furfrou"
-        case "Furfrou Star":
-            name = "Star Trim Furfrou"
-        case "Furfrou Diamond":
-            name = "Diamond Trim Furfrou"
-        case "Furfrou Debutante":
-            name = "Debutante Trim Furfrou"
-        case "Furfrou Matron":
-            name = "Matron Trim Furfrou"
-        case "Furfrou Dandy":
-            name = "Dandy Trim Furfrou"
-        case "Furfrou La Reine":
-            name = "La Reine Trim Furfrou"
-        case "Furfrou Kabuki":
-            name = "Kabuki Trim Furfrou"
-        case "Furfrou Pharaoh":
-            name = "Pharaoh Trim Furfrou"
+            name = "Flabébé"
+            # if aesthetic:
+            #     name = "Red Flower Flabébé"
+            # else:
+            #     name = "Flabébé"
+        # case "Flabebe Yellow":
+        #     name = "Yellow Flower Flabébé"
+        # case "Flabebe Orange":
+        #     name = "Orange Flower Flabébé"
+        # case "Flabebe Blue":
+        #     name = "Blue Flower Flabébé"
+        # case "Flabebe White":
+        #     name = "White Flower Flabébé"
+        # case "Floette":
+        #     if aesthetic:
+        #         name = "Red Flower Floette"
+        #     else:
+        #         name = "Floette"
+        # case "Floette Yellow":
+        #     name = "Yellow Flower Floette"
+        # case "Floette Orange":
+        #     name = "Orange Flower Floette"
+        # case "Floette Blue":
+        #     name = "Blue Flower Floette"
+        # case "Floette White":
+        #     name = "White Flower Floette"
+        # case "Florges":
+        #     if aesthetic:
+        #         name = "Red Flower Florges"
+        #     else:
+        #         name = "Florges"
+        # case "Florges Yellow":
+        #     name = "Yellow Flower Florges"
+        # case "Florges Orange":
+        #     name = "Orange Flower Florges"
+        # case "Florges Blue":
+        #     name = "Blue Flower Florges"
+        # case "Florges White":
+        #     name = "White Flower Florges"
+        # case "Furfrou":
+        #     if aesthetic:
+        #         name = "Furfrou Natural Form"
+        #     else:
+        #         name = "Furfrou"
+        # case "Furfrou Heart":
+        #     name = "Heart Trim Furfrou"
+        # case "Furfrou Star":
+        #     name = "Star Trim Furfrou"
+        # case "Furfrou Diamond":
+        #     name = "Diamond Trim Furfrou"
+        # case "Furfrou Debutante":
+        #     name = "Debutante Trim Furfrou"
+        # case "Furfrou Matron":
+        #     name = "Matron Trim Furfrou"
+        # case "Furfrou Dandy":
+        #     name = "Dandy Trim Furfrou"
+        # case "Furfrou La Reine":
+        #     name = "La Reine Trim Furfrou"
+        # case "Furfrou Kabuki":
+        #     name = "Kabuki Trim Furfrou"
+        # case "Furfrou Pharaoh":
+        #     name = "Pharaoh Trim Furfrou"
         case "Aegislash Shield":
             if alt:
                 name = "Shield Forme Aegislash"
@@ -436,13 +437,13 @@ def parse_name(raw_name, forms):
             name = "Large Size Gourgeist"
         case "Gourgeist Super":
             name = "Super Size Gourgeist"
-        case "Xerneas":
-            if aesthetic:
-                name = "Active Mode Xerneas"
-            else:
-                name = "Xerneas"
-        case "Xerneas Neutral":
-            name = "Neutral Mode Xerneas"
+        # case "Xerneas":
+        #     if aesthetic:
+        #         name = "Active Mode Xerneas"
+        #     else:
+        #         name = "Xerneas"
+        # case "Xerneas Neutral":
+        #     name = "Neutral Mode Xerneas"
         case "Zygarde 50":
             if alt:
                 name = "Zygarde 50% Forme"
@@ -488,65 +489,66 @@ def parse_name(raw_name, forms):
                 name = "Wishiwashi"
         case "Wishiwashi School":
             name = "School Form Wishiwashi"
-        case "Silvally":
-            if alt:
-                name = "Normal-type Silvally"
-        case "Silvally Fighting":
-            name = "Fighting-type Silvally"
-        case "Silvally Flying":
-            name = "Flying-type Silvally"
-        case "Silvally Poison":
-            name = "Poison-type Silvally"
-        case "Silvally Ground":
-            name = "Ground-type Silvally"
-        case "Silvally Rock":
-            name = "Rock-type Silvally"
-        case "Silvally Bug":
-            name = "Bug-type Silvally"
-        case "Silvally Ghost":
-            name = "Ghost-type Silvally"
-        case "Silvally Steel":
-            name = "Steel-type Silvally"
-        case "Silvally Fire":
-            name = "Fire-type Silvally"
-        case "Silvally Water":
-            name = "Water-type Silvally"
-        case "Silvally Grass":
-            name = "Grass-type Silvally"
-        case "Silvally Electric":
-            name = "Electric-type Silvally"
-        case "Silvally Psychic":
-            name = "Psychic-type Silvally"
-        case "Silvally Ice":
-            name = "Ice-type Silvally"
-        case "Silvally Dragon":
-            name = "Dragon-type Silvally"
-        case "Silvally Dark":
-            name = "Dark-type Silvally"
-        case "Silvally Fairy":
-            name = "Fairy-type Silvally"
+        # case "Silvally":
+        #     if alt:
+        #         name = "Normal-type Silvally"
+        # case "Silvally Fighting":
+        #     name = "Fighting-type Silvally"
+        # case "Silvally Flying":
+        #     name = "Flying-type Silvally"
+        # case "Silvally Poison":
+        #     name = "Poison-type Silvally"
+        # case "Silvally Ground":
+        #     name = "Ground-type Silvally"
+        # case "Silvally Rock":
+        #     name = "Rock-type Silvally"
+        # case "Silvally Bug":
+        #     name = "Bug-type Silvally"
+        # case "Silvally Ghost":
+        #     name = "Ghost-type Silvally"
+        # case "Silvally Steel":
+        #     name = "Steel-type Silvally"
+        # case "Silvally Fire":
+        #     name = "Fire-type Silvally"
+        # case "Silvally Water":
+        #     name = "Water-type Silvally"
+        # case "Silvally Grass":
+        #     name = "Grass-type Silvally"
+        # case "Silvally Electric":
+        #     name = "Electric-type Silvally"
+        # case "Silvally Psychic":
+        #     name = "Psychic-type Silvally"
+        # case "Silvally Ice":
+        #     name = "Ice-type Silvally"
+        # case "Silvally Dragon":
+        #     name = "Dragon-type Silvally"
+        # case "Silvally Dark":
+        #     name = "Dark-type Silvally"
+        # case "Silvally Fairy":
+        #     name = "Fairy-type Silvally"
         case "Minior Red Meteor":
             if alt:
                 name = "Meteor Form Minior"
             else:
                 name = "Minior"
         case "Minior Red":
-            if aesthetic:
-                name = "Red Core Minior"
-            else:
-                name = "Core Form Minior"
-        case "Minior Orange":
-            name = "Orange Core Minior"
-        case "Minior Yellow":
-            name = "Yellow Core Minior"
-        case "Minior Green":
-            name = "Green Core Minior"
-        case "Minior Blue":
-            name = "Blue Core Minior"
-        case "Minior Indigo":
-            name = "Indigo Core Minior"
-        case "Minior Violet":
-            name = "Violet Core Minior"
+            name = "Core Form Minior"
+            # if aesthetic:
+            #     name = "Red Core Minior"
+            # else:
+            #     name = "Core Form Minior"
+        # case "Minior Orange":
+        #     name = "Orange Core Minior"
+        # case "Minior Yellow":
+        #     name = "Yellow Core Minior"
+        # case "Minior Green":
+        #     name = "Green Core Minior"
+        # case "Minior Blue":
+        #     name = "Blue Core Minior"
+        # case "Minior Indigo":
+        #     name = "Indigo Core Minior"
+        # case "Minior Violet":
+        #     name = "Violet Core Minior"
         case "Necrozma Dusk":
             name = "Dusk Mane Necrozma"
         case "Necrozma Dawn":

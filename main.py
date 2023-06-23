@@ -15,7 +15,7 @@ forms = {
     "primal": False,
     "gigantamax": False,
 
-    "unique": False,  # Spiky-eared Pichu, Eternal Floette, etc.
+    "unique": False,  # Eternal Floette, Own Tempo Rockruff, etc.
     "totem": False,
     "partner": False,  # Pikachu and Eevee starters from Let's Go!
 

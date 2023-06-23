@@ -138,10 +138,10 @@ def create_request(i, forms, dex):
                 dex.append(get_response(i, "geodude-alola"))
         case "75":
             if regional:
-                dex.append(get_response(i, "geodude-graveler"))
+                dex.append(get_response(i, "graveler-alola"))
         case "76":
             if regional:
-                dex.append(get_response(i, "geodude-golem"))
+                dex.append(get_response(i, "golem-alola"))
         case "77":
             if regional:
                 dex.append(get_response(i, "ponyta-galar"))
@@ -239,9 +239,9 @@ def create_request(i, forms, dex):
         case "157":
             if regional:
                 dex.append(get_response(i, "typhlosion-hisui"))
-        case "172":
-            if unique:
-                dex.append(get_response(i, "pichu-spiky-eared"))
+        # case "172":
+        #     if unique:
+        #         dex.append(get_response(i, "pichu-spiky-eared"))
         case "181":
             if mega:
                 dex.append(get_response(i, "ampharos-mega"))
@@ -254,35 +254,35 @@ def create_request(i, forms, dex):
         case "199":
             if regional:
                 dex.append(get_response(i, "slowking-galar"))
-        case "201":
-            if aesthetic:
-                dex.append(get_response(i, "unown-b"))
-                dex.append(get_response(i, "unown-c"))
-                dex.append(get_response(i, "unown-d"))
-                dex.append(get_response(i, "unown-e"))
-                dex.append(get_response(i, "unown-f"))
-                dex.append(get_response(i, "unown-g"))
-                dex.append(get_response(i, "unown-h"))
-                dex.append(get_response(i, "unown-i"))
-                dex.append(get_response(i, "unown-j"))
-                dex.append(get_response(i, "unown-k"))
-                dex.append(get_response(i, "unown-l"))
-                dex.append(get_response(i, "unown-m"))
-                dex.append(get_response(i, "unown-n"))
-                dex.append(get_response(i, "unown-o"))
-                dex.append(get_response(i, "unown-p"))
-                dex.append(get_response(i, "unown-q"))
-                dex.append(get_response(i, "unown-r"))
-                dex.append(get_response(i, "unown-s"))
-                dex.append(get_response(i, "unown-t"))
-                dex.append(get_response(i, "unown-u"))
-                dex.append(get_response(i, "unown-v"))
-                dex.append(get_response(i, "unown-w"))
-                dex.append(get_response(i, "unown-x"))
-                dex.append(get_response(i, "unown-y"))
-                dex.append(get_response(i, "unown-z"))
-                dex.append(get_response(i, "unown-exclamation"))
-                dex.append(get_response(i, "unown-question"))
+        # case "201":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "unown-b"))
+        #         dex.append(get_response(i, "unown-c"))
+        #         dex.append(get_response(i, "unown-d"))
+        #         dex.append(get_response(i, "unown-e"))
+        #         dex.append(get_response(i, "unown-f"))
+        #         dex.append(get_response(i, "unown-g"))
+        #         dex.append(get_response(i, "unown-h"))
+        #         dex.append(get_response(i, "unown-i"))
+        #         dex.append(get_response(i, "unown-j"))
+        #         dex.append(get_response(i, "unown-k"))
+        #         dex.append(get_response(i, "unown-l"))
+        #         dex.append(get_response(i, "unown-m"))
+        #         dex.append(get_response(i, "unown-n"))
+        #         dex.append(get_response(i, "unown-o"))
+        #         dex.append(get_response(i, "unown-p"))
+        #         dex.append(get_response(i, "unown-q"))
+        #         dex.append(get_response(i, "unown-r"))
+        #         dex.append(get_response(i, "unown-s"))
+        #         dex.append(get_response(i, "unown-t"))
+        #         dex.append(get_response(i, "unown-u"))
+        #         dex.append(get_response(i, "unown-v"))
+        #         dex.append(get_response(i, "unown-w"))
+        #         dex.append(get_response(i, "unown-x"))
+        #         dex.append(get_response(i, "unown-y"))
+        #         dex.append(get_response(i, "unown-z"))
+        #         dex.append(get_response(i, "unown-exclamation"))
+        #         dex.append(get_response(i, "unown-question"))
         case "208":
             if mega:
                 dex.append(get_response(i, "steelix-mega"))
@@ -394,23 +394,23 @@ def create_request(i, forms, dex):
                 dex.append(get_response(i, "deoxys-defense"))
                 dex.append(get_response(i, "deoxys-speed"))
 
-        case "412":
-            if aesthetic:
-                dex.append(get_response(i, "burmy-sandy"))
-                dex.append(get_response(i, "burmy-trash"))
+        # case "412":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "burmy-sandy"))
+        #         dex.append(get_response(i, "burmy-trash"))
         case "413":
             if alt:
                 dex.append(get_response(i, "wormadam-sandy"))
-                dex.append(get_response(i, "wormadam-trash"))
-        case "421":
-            if aesthetic:
-                dex.append(get_response(i, "cherrim-sunshine"))
-        case "422":
-            if aesthetic:
-                dex.append(get_response(i, "shellos-east"))
-        case "423":
-            if aesthetic:
-                dex.append(get_response(i, "gastrodon-east"))
+        #         dex.append(get_response(i, "wormadam-trash"))
+        # case "421":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "cherrim-sunshine"))
+        # case "422":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "shellos-east"))
+        # case "423":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "gastrodon-east"))
         case "428":
             if mega:
                 dex.append(get_response(i, "lopunny-mega"))
@@ -445,25 +445,25 @@ def create_request(i, forms, dex):
         case "492":
             if alt:
                 dex.append(get_response(i, "shaymin-sky"))
-        case "493":
-            if alt:
-                dex.append(get_response(i, "arceus-bug"))
-                dex.append(get_response(i, "arceus-dark"))
-                dex.append(get_response(i, "arceus-dragon"))
-                dex.append(get_response(i, "arceus-electric"))
-                dex.append(get_response(i, "arceus-fighting"))
-                dex.append(get_response(i, "arceus-fire"))
-                dex.append(get_response(i, "arceus-flying"))
-                dex.append(get_response(i, "arceus-ghost"))
-                dex.append(get_response(i, "arceus-grass"))
-                dex.append(get_response(i, "arceus-ground"))
-                dex.append(get_response(i, "arceus-ice"))
-                dex.append(get_response(i, "arceus-poison"))
-                dex.append(get_response(i, "arceus-psychic"))
-                dex.append(get_response(i, "arceus-rock"))
-                dex.append(get_response(i, "arceus-steel"))
-                dex.append(get_response(i, "arceus-water"))
-                dex.append(get_response(i, "arceus-fairy"))
+        # case "493":
+        #     if alt:
+        #         dex.append(get_response(i, "arceus-bug"))
+        #         dex.append(get_response(i, "arceus-dark"))
+        #         dex.append(get_response(i, "arceus-dragon"))
+        #         dex.append(get_response(i, "arceus-electric"))
+        #         dex.append(get_response(i, "arceus-fighting"))
+        #         dex.append(get_response(i, "arceus-fire"))
+        #         dex.append(get_response(i, "arceus-flying"))
+        #         dex.append(get_response(i, "arceus-ghost"))
+        #         dex.append(get_response(i, "arceus-grass"))
+        #         dex.append(get_response(i, "arceus-ground"))
+        #         dex.append(get_response(i, "arceus-ice"))
+        #         dex.append(get_response(i, "arceus-poison"))
+        #         dex.append(get_response(i, "arceus-psychic"))
+        #         dex.append(get_response(i, "arceus-rock"))
+        #         dex.append(get_response(i, "arceus-steel"))
+        #         dex.append(get_response(i, "arceus-water"))
+        #         dex.append(get_response(i, "arceus-fairy"))
 
         case "502":
             if regional:
@@ -475,10 +475,10 @@ def create_request(i, forms, dex):
             if regional:
                 dex.append(get_response(i, "lilligant-hisui"))
         case "550":
-            if aesthetic:
+            if alt:
                 dex.append(get_response(i, "basculin-blue-striped"))
             if regional:
-                dex.append(get_response(i, "basulin-white-striped"))
+                dex.append(get_response(i, "basculin-white-striped"))
         case "554":
             if regional:
                 dex.append(get_response(i, "darumaka-galar"))
@@ -486,9 +486,9 @@ def create_request(i, forms, dex):
             if alt:
                 dex.append(get_response(i, "darmanitan-zen"))
             if regional:
-                dex.append(get_response(i, "darmanitan-galar"))
+                dex.append(get_response(i, "darmanitan-galar-standard"))
             if alt and regional:
-                dex.append(get_response(i, "darmanitan-garar-zen"))
+                dex.append(get_response(i, "darmanitan-galar-zen"))
         case "561":
             if regional:
                 dex.append(get_response(i, "yamask-galar"))
@@ -501,19 +501,19 @@ def create_request(i, forms, dex):
         case "571":
             if regional:
                 dex.append(get_response(i, "zoroark-hisui"))
-        case "585":
-            if aesthetic:
-                dex.append(get_response(i, "deerling-summer"))
-                dex.append(get_response(i, "deerling-autumn"))
-                dex.append(get_response(i, "deerling-winter"))
-        case "586":
-            if aesthetic:
-                dex.append(get_response(i, "sawsbuck-summer"))
-                dex.append(get_response(i, "sawsbuck-autumn"))
-                dex.append(get_response(i, "sawsbuck-winter"))
+        # case "585":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "deerling-summer"))
+        #         dex.append(get_response(i, "deerling-autumn"))
+        #         dex.append(get_response(i, "deerling-winter"))
+        # case "586":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "sawsbuck-summer"))
+        #         dex.append(get_response(i, "sawsbuck-autumn"))
+        #         dex.append(get_response(i, "sawsbuck-winter"))
         case "618":
             if regional:
-                dex.append(get_response(i, "stunfisk-galarian"))
+                dex.append(get_response(i, "stunfisk-galar"))
         case "628":
             if regional:
                 dex.append(get_response(i, "braviary-hisui"))
@@ -536,70 +536,70 @@ def create_request(i, forms, dex):
         case "648":
             if alt:
                 dex.append(get_response(i, "meloetta-pirouette"))
-        case "649":
-            if aesthetic:
-                dex.append(get_response(i, "genesect-douse"))
-                dex.append(get_response(i, "genesect-shock"))
-                dex.append(get_response(i, "genesect-burn"))
-                dex.append(get_response(i, "genesect-chill"))
+        # case "649":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "genesect-douse"))
+        #         dex.append(get_response(i, "genesect-shock"))
+        #         dex.append(get_response(i, "genesect-burn"))
+        #         dex.append(get_response(i, "genesect-chill"))
 
         case "658":
             if unique:
                 dex.append(get_response(i, "greninja-battle-bond"))
             if ash:
                 dex.append(get_response(i, "greninja-ash"))
-        case "666":
-            if aesthetic:
-                dex.append(get_response(i, "vivillon-icy-snow"))
-                dex.append(get_response(i, "vivillon-polar"))
-                dex.append(get_response(i, "vivillon-tundra"))
-                dex.append(get_response(i, "vivillon-continental"))
-                dex.append(get_response(i, "vivillon-garden"))
-                dex.append(get_response(i, "vivillon-elegant"))
-                dex.append(get_response(i, "vivillon-modern"))
-                dex.append(get_response(i, "vivillon-marine"))
-                dex.append(get_response(i, "vivillon-archipelago"))
-                dex.append(get_response(i, "vivillon-high-plains"))
-                dex.append(get_response(i, "vivillon-sandstorm"))
-                dex.append(get_response(i, "vivillon-river"))
-                dex.append(get_response(i, "vivillon-monsoon"))
-                dex.append(get_response(i, "vivillon-savanna"))
-                dex.append(get_response(i, "vivillon-sun"))
-                dex.append(get_response(i, "vivillon-ocean"))
-                dex.append(get_response(i, "vivillon-jungle"))
-                dex.append(get_response(i, "vivillon-fancy"))
-                dex.append(get_response(i, "vivillon-poke-ball"))
-        case "669":
-            if aesthetic:
-                dex.append(get_response(i, "flabebe-yellow"))
-                dex.append(get_response(i, "flabebe-orange"))
-                dex.append(get_response(i, "flabebe-blue"))
-                dex.append(get_response(i, "flabebe-white"))
+        # case "666":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "vivillon-icy-snow"))
+        #         dex.append(get_response(i, "vivillon-polar"))
+        #         dex.append(get_response(i, "vivillon-tundra"))
+        #         dex.append(get_response(i, "vivillon-continental"))
+        #         dex.append(get_response(i, "vivillon-garden"))
+        #         dex.append(get_response(i, "vivillon-elegant"))
+        #         dex.append(get_response(i, "vivillon-modern"))
+        #         dex.append(get_response(i, "vivillon-marine"))
+        #         dex.append(get_response(i, "vivillon-archipelago"))
+        #         dex.append(get_response(i, "vivillon-high-plains"))
+        #         dex.append(get_response(i, "vivillon-sandstorm"))
+        #         dex.append(get_response(i, "vivillon-river"))
+        #         dex.append(get_response(i, "vivillon-monsoon"))
+        #         dex.append(get_response(i, "vivillon-savanna"))
+        #         dex.append(get_response(i, "vivillon-sun"))
+        #         dex.append(get_response(i, "vivillon-ocean"))
+        #         dex.append(get_response(i, "vivillon-jungle"))
+        #         dex.append(get_response(i, "vivillon-fancy"))
+        #         dex.append(get_response(i, "vivillon-poke-ball"))
+        # case "669":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "flabebe-yellow"))
+        #         dex.append(get_response(i, "flabebe-orange"))
+        #         dex.append(get_response(i, "flabebe-blue"))
+        #         dex.append(get_response(i, "flabebe-white"))
         case "670":
-            if aesthetic:
-                dex.append(get_response(i, "floette-yellow"))
-                dex.append(get_response(i, "floette-orange"))
-                dex.append(get_response(i, "floette-blue"))
-                dex.append(get_response(i, "floette-white"))
+            # if aesthetic:
+            #     dex.append(get_response(i, "floette-yellow"))
+            #     dex.append(get_response(i, "floette-orange"))
+            #     dex.append(get_response(i, "floette-blue"))
+            #     dex.append(get_response(i, "floette-white"))
             if unique:
                 dex.append(get_response(i, "floette-eternal"))
-        case "671":
-            if aesthetic:
-                dex.append(get_response(i, "florges-yellow"))
-                dex.append(get_response(i, "florges-orange"))
-                dex.append(get_response(i, "florges-blue"))
-                dex.append(get_response(i, "florges-white"))
-        case "676":
-            if aesthetic:
-                dex.append(get_response(i, "furfrou-heart"))
-                dex.append(get_response(i, "furfrou-star"))
-                dex.append(get_response(i, "furfrou-diamond"))
-                dex.append(get_response(i, "furfrou-debutante"))
-                dex.append(get_response(i, "furfrou-matron"))
-                dex.append(get_response(i, "furfrou-dandy"))
-                dex.append(get_response(i, "furfrou-la-reine"))
-                dex.append(get_response(i, "furfrou-kabuki"))
-                dex.append(get_response(i, "furfrou-pharaoh"))
+        # case "671":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "florges-yellow"))
+        #         dex.append(get_response(i, "florges-orange"))
+        #         dex.append(get_response(i, "florges-blue"))
+        #         dex.append(get_response(i, "florges-white"))
+        # case "676":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "furfrou-heart"))
+        #         dex.append(get_response(i, "furfrou-star"))
+        #         dex.append(get_response(i, "furfrou-diamond"))
+        #         dex.append(get_response(i, "furfrou-debutante"))
+        #         dex.append(get_response(i, "furfrou-matron"))
+        #         dex.append(get_response(i, "furfrou-dandy"))
+        #         dex.append(get_response(i, "furfrou-la-reine"))
+        #         dex.append(get_response(i, "furfrou-kabuki"))
+        #         dex.append(get_response(i, "furfrou-pharaoh"))
         case "678":
             if gender:
                 dex.append(get_response(i, "meowstic-female"))
@@ -625,9 +625,9 @@ def create_request(i, forms, dex):
         case "713":
             if regional:
                 dex.append(get_response(i, "avalugg-hisui"))
-        case "716":
-            if aesthetic:
-                dex.append(get_response(i, "xerneas-neutral"))
+        # case "716":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "xerneas-neutral"))
         case "718":
             if alt:
                 dex.append(get_response(i, "zygarde-10"))
@@ -677,25 +677,25 @@ def create_request(i, forms, dex):
         case "758":
             if totem:
                 dex.append(get_response(i, "salazzle-totem"))
-        case "773":
-            if alt:
-                dex.append(get_response(i, "silvally-fighting"))
-                dex.append(get_response(i, "silvally-flying"))
-                dex.append(get_response(i, "silvally-poison"))
-                dex.append(get_response(i, "silvally-ground"))
-                dex.append(get_response(i, "silvally-rock"))
-                dex.append(get_response(i, "silvally-bug"))
-                dex.append(get_response(i, "silvally-ghost"))
-                dex.append(get_response(i, "silvally-steel"))
-                dex.append(get_response(i, "silvally-fire"))
-                dex.append(get_response(i, "silvally-water"))
-                dex.append(get_response(i, "silvally-grass"))
-                dex.append(get_response(i, "silvally-electric"))
-                dex.append(get_response(i, "silvally-psychic"))
-                dex.append(get_response(i, "silvally-ice"))
-                dex.append(get_response(i, "silvally-dragon"))
-                dex.append(get_response(i, "silvally-dark"))
-                dex.append(get_response(i, "silvally-fairy"))
+        # case "773":
+        #     if alt:
+        #         dex.append(get_response(i, "silvally-fighting"))
+        #         dex.append(get_response(i, "silvally-flying"))
+        #         dex.append(get_response(i, "silvally-poison"))
+        #         dex.append(get_response(i, "silvally-ground"))
+        #         dex.append(get_response(i, "silvally-rock"))
+        #         dex.append(get_response(i, "silvally-bug"))
+        #         dex.append(get_response(i, "silvally-ghost"))
+        #         dex.append(get_response(i, "silvally-steel"))
+        #         dex.append(get_response(i, "silvally-fire"))
+        #         dex.append(get_response(i, "silvally-water"))
+        #         dex.append(get_response(i, "silvally-grass"))
+        #         dex.append(get_response(i, "silvally-electric"))
+        #         dex.append(get_response(i, "silvally-psychic"))
+        #         dex.append(get_response(i, "silvally-ice"))
+        #         dex.append(get_response(i, "silvally-dragon"))
+        #         dex.append(get_response(i, "silvally-dark"))
+        #         dex.append(get_response(i, "silvally-fairy"))
         case "774":
             # if aesthetic:
             #     dex.append(get_response(i, "minior-orange-meteor"))
@@ -706,19 +706,19 @@ def create_request(i, forms, dex):
             #     dex.append(get_response(i, "minior-violet-meteor"))
             if alt:
                 dex.append(get_response(i, "minior-red"))
-            if aesthetic and alt:
-                dex.append(get_response(i, "minior-orange"))
-                dex.append(get_response(i, "minior-yellow"))
-                dex.append(get_response(i, "minior-green"))
-                dex.append(get_response(i, "minior-blue"))
-                dex.append(get_response(i, "minior-indigo"))
-                dex.append(get_response(i, "minior-violet"))
+            # if aesthetic and alt:
+            #     dex.append(get_response(i, "minior-orange"))
+            #     dex.append(get_response(i, "minior-yellow"))
+            #     dex.append(get_response(i, "minior-green"))
+            #     dex.append(get_response(i, "minior-blue"))
+            #     dex.append(get_response(i, "minior-indigo"))
+            #     dex.append(get_response(i, "minior-violet"))
         case "777":
             if totem:
                 dex.append(get_response(i, "togedemaru-totem"))
         case "778":
             if totem:
-                dex.append(get_response(i, "mimikyu-totem"))
+                dex.append(get_response(i, "mimikyu-totem-disguised"))
             if disguise:
                 dex.append(get_response(i, "mimikyu-busted"))
             if totem and disguise:
@@ -794,16 +794,16 @@ def create_request(i, forms, dex):
         case "861":
             if gmax:
                 dex.append(get_response(i, "grimmsnarl-gmax"))
-        case "869":
-            if aesthetic:
-                dex.append(get_response(i, "alcremie-ruby-cream"))
-                dex.append(get_response(i, "alcremie-matcha-cream"))
-                dex.append(get_response(i, "alcremie-mint-cream"))
-                dex.append(get_response(i, "alcremie-lemon-cream"))
-                dex.append(get_response(i, "alcremie-salted-cream"))
-                dex.append(get_response(i, "alcremie-ruby-swirl"))
-                dex.append(get_response(i, "alcremie-caramel-swirl"))
-                dex.append(get_response(i, "alcremie-rainbow-swirl"))
+        # case "869":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "alcremie-ruby-cream"))
+        #         dex.append(get_response(i, "alcremie-matcha-cream"))
+        #         dex.append(get_response(i, "alcremie-mint-cream"))
+        #         dex.append(get_response(i, "alcremie-lemon-cream"))
+        #         dex.append(get_response(i, "alcremie-salted-cream"))
+        #         dex.append(get_response(i, "alcremie-ruby-swirl"))
+        #         dex.append(get_response(i, "alcremie-caramel-swirl"))
+        #         dex.append(get_response(i, "alcremie-rainbow-swirl"))
             if gmax:
                 dex.append(get_response(i, "alcremie-gmax"))
         case "875":
@@ -876,7 +876,7 @@ def create_request(i, forms, dex):
                 dex.append(get_response(i, "dudunsparce-three-segment"))
         case "999":
             if alt:
-                dex.append(get_response(i, "ghimmighoul-roaming"))
+                dex.append(get_response(i, "gimmighoul-roaming"))
         case "1007":
             if mounts:
                 dex.append(get_response(i, "koraidon-limited-build"))
@@ -888,7 +888,7 @@ def create_request(i, forms, dex):
                 dex.append(get_response(i, "miraidon-low-power-mode"))
                 dex.append(get_response(i, "miraidon-drive-mode"))
                 dex.append(get_response(i, "miraidon-aquatic-mode"))
-                dex.append(get_response(i, "miraidon-gliding-mode"))
+                dex.append(get_response(i, "miraidon-glide-mode"))
 
     return dex
 
