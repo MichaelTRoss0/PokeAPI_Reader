@@ -782,12 +782,12 @@ def create_request(i, forms, dex):
         case "851":
             if gmax:
                 dex.append(get_response(i, "centiskorch-gmax"))
-        case "854":
-            if aesthetic:
-                dex.append(get_response(i, "sinistea-antique"))
-        case "855":
-            if aesthetic:
-                dex.append(get_response(i, "polteageist-antique"))
+        # case "854":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "sinistea-antique"))
+        # case "855":
+        #     if aesthetic:
+        #         dex.append(get_response(i, "polteageist-antique"))
         case "858":
             if gmax:
                 dex.append(get_response(i, "hatterene-gmax"))
