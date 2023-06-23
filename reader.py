@@ -2,12 +2,12 @@ import json
 import requests
 
 
-def read_api(limit, forms):
+def read_api(start, end, forms):
     dex = []
 
     print("Gathering data...")
-    for x in range(limit):
-        i = str(x + 1)
+    for x in range(start, end + 1):
+        i = str(x)
         dex = create_request(i, forms, dex)
         print("Gathered data for Pokémon #" + i)
 
@@ -401,7 +401,7 @@ def create_request(i, forms, dex):
         case "413":
             if alt:
                 dex.append(get_response(i, "wormadam-sandy"))
-        #         dex.append(get_response(i, "wormadam-trash"))
+                dex.append(get_response(i, "wormadam-trash"))
         # case "421":
         #     if aesthetic:
         #         dex.append(get_response(i, "cherrim-sunshine"))
@@ -489,7 +489,7 @@ def create_request(i, forms, dex):
                 dex.append(get_response(i, "darmanitan-galar-standard"))
             if alt and regional:
                 dex.append(get_response(i, "darmanitan-galar-zen"))
-        case "561":
+        case "562":
             if regional:
                 dex.append(get_response(i, "yamask-galar"))
         case "569":
@@ -717,10 +717,10 @@ def create_request(i, forms, dex):
             if totem:
                 dex.append(get_response(i, "togedemaru-totem"))
         case "778":
-            if totem:
-                dex.append(get_response(i, "mimikyu-totem-disguised"))
             if disguise:
                 dex.append(get_response(i, "mimikyu-busted"))
+            if totem:
+                dex.append(get_response(i, "mimikyu-totem-disguised"))
             if totem and disguise:
                 dex.append(get_response(i, "mimikyu-totem-busted"))
         case "784":
@@ -794,16 +794,16 @@ def create_request(i, forms, dex):
         case "861":
             if gmax:
                 dex.append(get_response(i, "grimmsnarl-gmax"))
-        # case "869":
-        #     if aesthetic:
-        #         dex.append(get_response(i, "alcremie-ruby-cream"))
-        #         dex.append(get_response(i, "alcremie-matcha-cream"))
-        #         dex.append(get_response(i, "alcremie-mint-cream"))
-        #         dex.append(get_response(i, "alcremie-lemon-cream"))
-        #         dex.append(get_response(i, "alcremie-salted-cream"))
-        #         dex.append(get_response(i, "alcremie-ruby-swirl"))
-        #         dex.append(get_response(i, "alcremie-caramel-swirl"))
-        #         dex.append(get_response(i, "alcremie-rainbow-swirl"))
+        case "869":
+            # if aesthetic:
+            #     dex.append(get_response(i, "alcremie-ruby-cream"))
+            #     dex.append(get_response(i, "alcremie-matcha-cream"))
+            #     dex.append(get_response(i, "alcremie-mint-cream"))
+            #     dex.append(get_response(i, "alcremie-lemon-cream"))
+            #     dex.append(get_response(i, "alcremie-salted-cream"))
+            #     dex.append(get_response(i, "alcremie-ruby-swirl"))
+            #     dex.append(get_response(i, "alcremie-caramel-swirl"))
+            #     dex.append(get_response(i, "alcremie-rainbow-swirl"))
             if gmax:
                 dex.append(get_response(i, "alcremie-gmax"))
         case "875":
@@ -843,8 +843,6 @@ def create_request(i, forms, dex):
         case "898":
             if alt:
                 dex.append(get_response(i, "calyrex-ice"))
-        case "898":
-            if alt:
                 dex.append(get_response(i, "calyrex-shadow"))
         case "902":
             if gender:

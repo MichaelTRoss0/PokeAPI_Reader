@@ -3,8 +3,8 @@ import parser_and_writer
 
 filename = "pokemon_data.txt"
 # limit = 1010
-# limit = 1281
-limit = 1010
+start = 1
+end = 1010
 forms = {
     "all": True,  # If True, will overwrite all other options below
     "forms": False,  # Deoxys, Wormadam, etc.
@@ -28,7 +28,8 @@ forms = {
     "mounts": False  # Koraidon and Miraidon non-battle forms
 }
 
-print("Will now write basic data of the first " + str(limit) + " Pokémon to file.\n")
+print("Will now write basic data of Pokémon #"
+      + str(start) + " to #" + str(end) + " to file.\n")
 
-dex = reader.read_api(limit, forms)
+dex = reader.read_api(start, end, forms)
 parser_and_writer.parse_and_write_info(filename, dex, forms)

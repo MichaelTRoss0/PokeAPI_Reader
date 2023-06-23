@@ -2,9 +2,9 @@ import reader
 
 
 def parse_and_write_info(filename, dex, forms):
-    file = open(filename, 'w')
+    file = open(filename, 'w', encoding="utf-8")
 
-    i = 0
+    # i = 0
     print("Parsing and writing data into simpler form...")
     for entry in dex:
         order = entry["id"]
@@ -14,8 +14,8 @@ def parse_and_write_info(filename, dex, forms):
         stats = parse_stats(entry["stats"])
 
         write_info(name, order, types, abilities, stats, file)
-        i += 1
-        print("Parsed and wrote data for Pokémon #" + str(i))
+        # i += 1
+        print("Parsed and wrote data for Pokémon #" + str(order))
 
     file.close()
     print("Parsing and writing data complete!")
@@ -96,6 +96,11 @@ def parse_name(raw_name, forms):
                 name = "Basculegion"
         case "Basculegion Female":
             name = "Female Basculegion"
+        case "Oinkologne":
+            if gender:
+                name = "Male Oinkologne"
+        case "Oinkologne Female":
+            name = "Female Oinkologne"
 
         # Pokémon with alternate forms
         # case "Unown":
@@ -568,35 +573,37 @@ def parse_name(raw_name, forms):
                 name = "Toxtricity"
         case "Toxtricity Low Key":
             name = "Low Key Form Toxtricity"
-        case "Sinistea":
-            if aesthetic:
-                name = "Phony Form Sinistea"
-        case "Sinistea Antique":
-            name = "Antique Form Sinistea"
-        case "Polteageist":
-            if aesthetic:
-                name = "Phony Form Polteageist"
-        case "Polteageist Antique":
-            name = "Antique Form Polteageist"
-        case "Alcremie":
-            if aesthetic:
-                name = "Vanilla Cream Alcremie"
-        case "Alcremie Ruby Cream":
-            name = "Ruby Cream Alcremie"
-        case "Alcremie Matcha Cream":
-            name = "Matcha Cream Alcremie"
-        case "Alcremie Mint Cream":
-            name = "Mint Cream Alcremie"
-        case "Alcremie Lemon Cream":
-            name = "Lemon Cream Alcremie"
-        case "Alcremie Salted Cream":
-            name = "Salted Cream Alcremie"
-        case "Alcremie Ruby Swirl":
-            name = "Ruby Swirl Alcremie"
-        case "Alcremie Caramel Swirl":
-            name = "Caramel Swirl Alcremie"
-        case "Alcremie Rainbow Swirl":
-            name = "Rainbow Swirl Alcremie"
+        case "Toxtricity Amped Gmax":
+            name = "Gigantamax Toxtricity"
+        # case "Sinistea":
+        #     if aesthetic:
+        #         name = "Phony Form Sinistea"
+        # case "Sinistea Antique":
+        #     name = "Antique Form Sinistea"
+        # case "Polteageist":
+        #     if aesthetic:
+        #         name = "Phony Form Polteageist"
+        # case "Polteageist Antique":
+        #     name = "Antique Form Polteageist"
+        # case "Alcremie":
+        #     if aesthetic:
+        #         name = "Vanilla Cream Alcremie"
+        # case "Alcremie Ruby Cream":
+        #     name = "Ruby Cream Alcremie"
+        # case "Alcremie Matcha Cream":
+        #     name = "Matcha Cream Alcremie"
+        # case "Alcremie Mint Cream":
+        #     name = "Mint Cream Alcremie"
+        # case "Alcremie Lemon Cream":
+        #     name = "Lemon Cream Alcremie"
+        # case "Alcremie Salted Cream":
+        #     name = "Salted Cream Alcremie"
+        # case "Alcremie Ruby Swirl":
+        #     name = "Ruby Swirl Alcremie"
+        # case "Alcremie Caramel Swirl":
+        #     name = "Caramel Swirl Alcremie"
+        # case "Alcremie Rainbow Swirl":
+        #     name = "Rainbow Swirl Alcremie"
         case "Eiscue Ice":
             if alt:
                 name = "Ice Face Form Eiscue"
@@ -626,8 +633,8 @@ def parse_name(raw_name, forms):
                 name = "Single Strike Style Urshifu"
             else:
                 name = "Urshifu"
-        case "Urshifu Single Strike":
-            name = "Single Strike Style Urshifu"
+        case "Urshifu Rapid Strike":
+            name = "Rapid Strike Style Urshifu"
         case "Zarude Dada":
             name = "Dada Zarude"
         case "Calyrex Ice":
@@ -646,7 +653,7 @@ def parse_name(raw_name, forms):
                 name = "Family of Four Maushold"
             else:
                 name = "Maushold"
-        case "Maushold Family of Three":
+        case "Maushold Family Of Three":
             name = "Family of Three Maushold"
         case "Squawkabilly":
             if aesthetic:
@@ -718,7 +725,7 @@ def parse_name(raw_name, forms):
         case "Sandshrew Alola":
             name = "Alolan Sandshrew"
         case "Sandslash Alola":
-            name = "Alolan Sandshrew"
+            name = "Alolan Sandslash"
         case "Vulpix Alola":
             name = "Alolan Vulpix"
         case "Ninetales Alola":
@@ -779,7 +786,7 @@ def parse_name(raw_name, forms):
             name = "Galarian Linoone"
         case "Darumaka Galar":
             name = "Galarian Darumaka"
-        case "Darmanitan Galar":
+        case "Darmanitan Galar Standard":
             if alt:
                 name = "Galarian Standard Mode Darmanitan"
             else:
@@ -795,10 +802,10 @@ def parse_name(raw_name, forms):
         case "Growlithe Hisui":
             name = "Hisuian Growlithe"
         case "Arcanine Hisui":
-            name = "hisuian Growlithe"
+            name = "Hisuian Arcanine"
         case "Voltorb Hisui":
             name = "Hisuian Voltorb"
-        case "Electrode":
+        case "Electrode Hisui":
             name = "Hisuian Electrode"
         case "Typhlosion Hisui":
             name = "Hisuian Typhlosion"
@@ -1040,7 +1047,7 @@ def parse_name(raw_name, forms):
             name = "Totem Salazzle"
         case "Togedemaru Totem":
             name = "Totem Togedemaru"
-        case "Mimikyu Totem":
+        case "Mimikyu Totem Disguised":
             if disguise:
                 name = "Disguised Totem Mimikyu"
             else:
@@ -1135,6 +1142,8 @@ def parse_abilities(ability_info):
         name = pokemon_ability["name"]
         name = name.replace("-", " ")
         name = name.title()
+        name = name.replace("As One Glastrier", "As One")
+        name = name.replace("As One Spectrier", "As One")
         name = name.replace("Soul Heart", "Soul-Heart")
         name = name.replace("Well Baked Body", "Well-Baked Body")
         slot = listed_ability["slot"] - 1
@@ -1167,19 +1176,25 @@ def parse_stats(stats_info):
 
 
 def write_info(name, id_number, types, abilities, stats, file):
-    info1 = "{:>4} || {:>30} ||"\
+    info1 = "{:>4} || {:>38} ||" \
         .format(id_number, name)
     if types[1] != "none":
-        info2 = " {:>8}/{:<8} ||"\
+        info2 = " {:>8}/{:<8} ||" \
             .format(types[0], types[1])
     else:
-        info2 = " {:>8}          ||"\
+        info2 = " {:>8}          ||" \
             .format(types[0])
-    info3 = " {:>16}, {:>16}, {:>16} ||"\
+    info3 = " {:>16}, {:>16}, {:>16} ||" \
         .format(abilities[0], abilities[1], abilities[2])
-    info4 = " {:>3}, {:>3}, {:>3}, {:>3}, {:>3}, {:>3}\n"\
-        .format(stats[0], stats[1], stats[2],
+    info4 = " {:>4}: {:>3}, {:>3}, {:>3}, {:>3}, {:>3}, {:>3}\n" \
+        .format(calc_bst(stats),
+                stats[0], stats[1], stats[2],
                 stats[3], stats[4], stats[5])
     info_line = info1 + info2 + info3 + info4
 
     file.write(info_line)
+
+
+def calc_bst(stats):
+    return int(stats[0]) + int(stats[1]) + int(stats[2])\
+        + int(stats[3]) + int(stats[4]) + int(stats[5])
