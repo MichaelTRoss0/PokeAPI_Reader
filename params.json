@@ -1,0 +1,25 @@
+{
+  "output": "pokemon_data.txt",
+  "start": 1,
+  "end": 1010,
+  "forms": {
+    "all": true,
+    "none": false,
+    "forms": true,
+    "aesthetic only": false,
+    "gender-based": true,
+    "regional variant": true,
+    "mega evolution": true,
+    "primal": true,
+    "gigantamax": false,
+    "unique": true,
+    "totem": false,
+    "partner": false,
+    "cosplay pikachu": false,
+    "pikachu in a cap": false,
+    "ash greninja": false,
+    "disguise": false,
+    "eternamax": false,
+    "mounts": false
+  }
+}

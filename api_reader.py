@@ -18,6 +18,8 @@ def read_api(start, end, forms):
 def create_request(i, forms, dex):
     if forms["all"]:
         forms = set_all_true(forms)
+    elif forms["none"]:
+        forms = set_all_false(forms)
     alt = forms["forms"]
     aesthetic = forms["aesthetic only"]
     gender = forms["gender-based"]
@@ -908,6 +910,27 @@ def set_all_true(forms):
     forms["disguise"] = True
     forms["eternamax"] = True
     forms["mounts"] = True
+
+    return forms
+
+
+def set_all_false(forms):
+    forms["forms"] = False
+    forms["aesthetic only"] = False
+    forms["gender-based"] = False
+    forms["regional variant"] = False
+    forms["mega evolution"] = False
+    forms["primal"] = False
+    forms["gigantamax"] = False
+    forms["unique"] = False
+    forms["totem"] = False
+    forms["partner"] = False
+    forms["cosplay pikachu"] = False
+    forms["pikachu in a cap"] = False
+    forms["ash greninja"] = False
+    forms["disguise"] = False
+    forms["eternamax"] = False
+    forms["mounts"] = False
 
     return forms
 

@@ -1,11 +1,12 @@
-import reader
+import api_reader
 
 
 def parse_and_write_info(filename, dex, forms):
-    file = open(filename, 'w', encoding="utf-8")
 
     # i = 0
-    print("Parsing and writing data into simpler form...")
+    print("Parsing data into simpler form...")
+    parsed_dex = []
+    size = 0
     for entry in dex:
         order = entry["id"]
         name = parse_name(entry["name"], forms)
@@ -13,32 +14,52 @@ def parse_and_write_info(filename, dex, forms):
         abilities = parse_abilities(entry["abilities"])
         stats = parse_stats(entry["stats"])
 
-        write_info(name, order, types, abilities, stats, file)
+        if len(name) > size:
+            size = len(name)
+
+        data = {
+            "order": order,
+            "name": name,
+            "types": types,
+            "abilities": abilities,
+            "stats": stats
+        }
+        parsed_dex.append(data)
+
         # i += 1
-        print("Parsed and wrote data for Pokémon #" + str(order))
+        # print("Parsed data for Pokémon #" + str(order))
+        print("Parsed data for " + name)
+    print("Parsing data complete!\n")
+
+    file = open(filename, 'w', encoding="utf-8")
+    print("Writing data to file...")
+    write_header(file, size)
+    for data in parsed_dex:
+        write_info(data["name"], data["order"], data["types"], data["abilities"], data["stats"], file, size)
+        pass
 
     file.close()
-    print("Parsing and writing data complete!")
+    print("Writing data complete!")
 
 
 def parse_name(raw_name, forms):
     if forms["all"]:
-        forms = reader.set_all_true(forms)
+        forms = api_reader.set_all_true(forms)
     alt = forms["forms"]
     aesthetic = forms["aesthetic only"]
     gender = forms["gender-based"]
-    regional = forms["regional variant"]
-    mega = forms["mega evolution"]
-    primal = forms["primal"]
-    gmax = forms["gigantamax"]
-    unique = forms["unique"]
-    totem = forms["totem"]
-    partner = forms["partner"]
-    cosplay = forms["cosplay pikachu"]
-    cap = forms["pikachu in a cap"]
-    ash = forms["ash greninja"]
+    # regional = forms["regional variant"]
+    # mega = forms["mega evolution"]
+    # primal = forms["primal"]
+    # gmax = forms["gigantamax"]
+    # unique = forms["unique"]
+    # totem = forms["totem"]
+    # partner = forms["partner"]
+    # cosplay = forms["cosplay pikachu"]
+    # cap = forms["pikachu in a cap"]
+    # ash = forms["ash greninja"]
     disguise = forms["disguise"]
-    eternamax = forms["eternamax"]
+    # eternamax = forms["eternamax"]
     mounts = forms["mounts"]
 
     name = raw_name.replace("-", " ")
@@ -656,7 +677,7 @@ def parse_name(raw_name, forms):
         case "Maushold Family Of Three":
             name = "Family of Three Maushold"
         case "Squawkabilly":
-            if aesthetic:
+            if alt:
                 name = "Green Plumage Squawkabilly"
         case "Squawkabilly Blue Plumage":
             name = "Blue Plumage Squawkabilly"
@@ -1175,14 +1196,36 @@ def parse_stats(stats_info):
     return stats
 
 
-def write_info(name, id_number, types, abilities, stats, file):
-    info1 = "{:>4} || {:>38} ||" \
-        .format(id_number, name)
+def write_header(file, size):
+    header1 = "{:>4} || {:>{size}} ||" \
+        .format("ID#", "Name", size=size)
+    header2 = " {:>8} / {:<8} ||" \
+        .format("Type 1", "Type 2")
+    header3 = " {:>16}, {:>16}, {:>16} ||" \
+        .format("Ability 1", "Ability 2", "Hidden Ability")
+    header4 = " {:>4}  {:>3}, {:>3}, {:>3}, {:>3}, {:>3}, {:>3}\n" \
+        .format("BST", "HP", "Atk", "Def", "SpA", "SpD", "Spe")
+    header_line = header1 + header2 + header3 + header4
+
+    length = len(header_line)
+    separator = ""
+    for i in range(length):
+        separator += "="
+        pass
+    separator += "\n"
+
+    file.write(header_line)
+    file.write(separator)
+
+
+def write_info(name, id_number, types, abilities, stats, file, size):
+    info1 = "{:>4} || {:>{size}} ||" \
+        .format(id_number, name, size=size)
     if types[1] != "none":
-        info2 = " {:>8}/{:<8} ||" \
+        info2 = " {:>8} / {:<8} ||" \
             .format(types[0], types[1])
     else:
-        info2 = " {:>8}          ||" \
+        info2 = " {:>8}            ||" \
             .format(types[0])
     info3 = " {:>16}, {:>16}, {:>16} ||" \
         .format(abilities[0], abilities[1], abilities[2])
