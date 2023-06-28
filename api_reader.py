@@ -20,22 +20,23 @@ def create_request(i, forms, dex):
         forms = set_all_true(forms)
     elif forms["none"]:
         forms = set_all_false(forms)
-    alt = forms["forms"]
-    aesthetic = forms["aesthetic only"]
-    gender = forms["gender-based"]
-    regional = forms["regional variant"]
-    mega = forms["mega evolution"]
-    primal = forms["primal"]
-    gmax = forms["gigantamax"]
-    unique = forms["unique"]
-    totem = forms["totem"]
-    partner = forms["partner"]
-    cosplay = forms["cosplay pikachu"]
-    cap = forms["pikachu in a cap"]
-    ash = forms["ash greninja"]
-    disguise = forms["disguise"]
-    eternamax = forms["eternamax"]
-    mounts = forms["mounts"]
+    if not forms["all"] and not forms["none"]:
+        alt = forms["forms"]
+        aesthetic = forms["aesthetic only"]
+        gender = forms["gender-based"]
+        regional = forms["regional variant"]
+        mega = forms["mega evolution"]
+        primal = forms["primal"]
+        gmax = forms["gigantamax"]
+        unique = forms["unique"]
+        totem = forms["totem"]
+        partner = forms["partner"]
+        cosplay = forms["cosplay pikachu"]
+        cap = forms["pikachu in a cap"]
+        ash = forms["ash greninja"]
+        disguise = forms["disguise"]
+        eternamax = forms["eternamax"]
+        mounts = forms["mounts"]
 
     dex.append(get_response(i, i))
     match i:  # Go through each Pokémon in National Dex order
