@@ -650,7 +650,7 @@ def create_request(i, forms, dex):
             if totem:
                 dex.append(get_response(i, "gumshoos-totem"))
         case "738":
-            if alt:
+            if totem:
                 dex.append(get_response(i, "vikavolt-totem"))
         case "741":
             if alt:
