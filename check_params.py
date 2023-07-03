@@ -39,5 +39,8 @@ def check_forms(forms):
           "ash greninja", "disguise", "eternamax", "mounts"]
     for s in li:
         if s not in forms:
-            msg = "Variable {} is missing or misnamed in forms.".format(s)
+            msg = "Variable '{}' is missing or misnamed in forms.".format(s)
+            sys.exit(msg)
+        if not isinstance(forms[s], bool):
+            msg = "Variable '{}' must be either 'true' or 'false'.".format(s)
             sys.exit(msg)
